@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // Purpose: Given this source clip fragment, which transcript words/segments should become caption phrases?
@@ -132,3 +133,4 @@ enum CaptionTranscriptMapper {
         return TranscriptionSegment(text: segment.text, start: start, end: end, speaker: segment.speaker)
     }
 }
+#endif

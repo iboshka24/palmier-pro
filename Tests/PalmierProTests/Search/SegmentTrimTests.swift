@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -52,3 +53,4 @@ struct SegmentTrimTests {
         #expect(clip?.sourceDurationFrames == 3000) // references the whole 100s × 30 source
     }
 }
+#endif

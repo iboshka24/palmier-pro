@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Testing
 @testable import PalmierPro
@@ -152,3 +153,4 @@ struct PreviewPlaybackRateTests {
         #expect(display.right.levelDb == AudioMeterChannelState.floorDb)
     }
 }
+#endif

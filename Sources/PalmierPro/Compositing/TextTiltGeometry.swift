@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 
 struct TextTiltCorners {
@@ -86,3 +87,4 @@ enum TextTiltGeometry {
         return (sin(radians), cos(radians))
     }
 }
+#endif

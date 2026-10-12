@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Testing
@@ -338,3 +339,4 @@ struct MCPStaticRotationTests {
         throw CocoaError(.coderReadCorrupt)
     }
 }
+#endif

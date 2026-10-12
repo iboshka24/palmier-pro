@@ -1,3 +1,4 @@
+#if os(macOS)
 import Accelerate
 import AVFoundation
 import Foundation
@@ -137,3 +138,4 @@ enum AudioLevelAnalyzer {
         return result
     }
 }
+#endif

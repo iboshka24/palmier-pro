@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Testing
@@ -93,3 +94,4 @@ struct EdgeRoundingToolTests {
         throw CocoaError(.coderReadCorrupt)
     }
 }
+#endif

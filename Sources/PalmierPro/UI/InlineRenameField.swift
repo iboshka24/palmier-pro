@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// Commit on Return or blur; Esc cancels. Empty or unchanged input cancels.
@@ -51,3 +52,4 @@ struct InlineRenameField: View {
         }
     }
 }
+#endif

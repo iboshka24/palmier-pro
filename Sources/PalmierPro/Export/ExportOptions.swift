@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 
 enum ExportFormat {
@@ -107,3 +108,4 @@ extension ExportFormat {
         }
     }
 }
+#endif

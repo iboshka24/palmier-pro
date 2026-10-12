@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 import Testing
@@ -110,3 +111,4 @@ struct ExtractAudioTests {
         return url
     }
 }
+#endif

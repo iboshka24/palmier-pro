@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct GeneratingOverlay: View {
@@ -101,3 +102,4 @@ private extension View {
         modifier(ShimmerModifier(active: active))
     }
 }
+#endif

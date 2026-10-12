@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TimelineColorsPane: View {
@@ -62,3 +63,4 @@ struct TimelineColorsPane: View {
         }
     }
 }
+#endif

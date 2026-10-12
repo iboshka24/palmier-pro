@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -61,3 +62,4 @@ enum CloudTranscription {
         return max(0.01, duration.isFinite ? duration : 0.01)
     }
 }
+#endif

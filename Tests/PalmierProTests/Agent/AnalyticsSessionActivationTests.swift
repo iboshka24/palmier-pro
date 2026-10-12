@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -76,3 +77,4 @@ struct AnalyticsSessionActivationTests {
         #expect(message?.contains("Retry the operation.") == true)
     }
 }
+#endif

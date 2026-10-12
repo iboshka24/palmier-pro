@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 @preconcurrency import ConvexMobile
 
@@ -56,3 +57,4 @@ private struct BackendErrorEnvelope: Decodable, Sendable {
     }
     let error: Inner
 }
+#endif

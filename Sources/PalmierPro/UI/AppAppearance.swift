@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import Observation
@@ -55,3 +56,4 @@ final class AppAppearanceStore {
         NSApp.appearance = selection.nsAppearance
     }
 }
+#endif

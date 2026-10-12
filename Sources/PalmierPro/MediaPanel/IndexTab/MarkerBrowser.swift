@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 private extension TimelineMarker.Status {
@@ -466,3 +467,4 @@ enum MarkerThumbnailMetrics {
         return CGSize(width: canvas.width * height / canvas.height, height: height)
     }
 }
+#endif

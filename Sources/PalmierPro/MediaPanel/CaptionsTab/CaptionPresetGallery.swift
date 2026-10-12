@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// Visual preset picker: a grid of cells that animate the preset on hover or when selected,
@@ -94,3 +95,4 @@ private struct CaptionPresetCell: View {
         return CaptionPreviewRender.clip(content: Self.sample, style: style, transform: transform, preset: preset, highlight: highlight)
     }
 }
+#endif

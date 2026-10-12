@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -29,3 +30,4 @@ struct ProjectClosePersistenceTests {
         #expect(saved.projectFile.timelines.first?.tracks.first?.clips.first?.durationFrames == 90)
     }
 }
+#endif

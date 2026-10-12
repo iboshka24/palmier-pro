@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -117,3 +118,4 @@ struct SilenceRemovalPlannerTests {
         ).isEmpty)
     }
 }
+#endif

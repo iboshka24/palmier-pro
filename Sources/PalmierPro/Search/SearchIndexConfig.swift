@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum SearchIndexConfig {
@@ -44,3 +45,4 @@ enum SearchIndexConfig {
         )
     )
 }
+#endif

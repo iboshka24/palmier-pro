@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import Observation
@@ -94,3 +95,4 @@ struct TimelineClipColorTests {
         #expect(abs(lhs.blueComponent - rhs.blueComponent) < 0.001, sourceLocation: sourceLocation)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 @Observable
@@ -779,3 +780,4 @@ final class EditorViewModel {
     }
 
 }
+#endif

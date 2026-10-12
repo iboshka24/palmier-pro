@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// Shared grid-tile chrome: artwork, selection border, name row with rename, clicks, context menu.
@@ -115,3 +116,4 @@ func formatMediaTileDuration(_ seconds: Double) -> String {
 private func mediaTileTwoDigits(_ value: Int) -> String {
     value < 10 ? "0\(value)" : "\(value)"
 }
+#endif

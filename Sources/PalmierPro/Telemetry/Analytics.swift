@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(CoreFoundation)
+import CoreFoundation
+#endif
 #if PRODUCTION_TELEMETRY
 import PostHog
 #endif

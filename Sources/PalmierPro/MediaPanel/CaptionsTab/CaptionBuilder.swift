@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // Purpose: Decides how words from CaptionTranscriptMapper should be grouped into chunks
@@ -208,3 +209,4 @@ enum CaptionBuilder {
         }
     }
 }
+#endif

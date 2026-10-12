@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 import Foundation
@@ -99,3 +100,4 @@ enum CompositorFixtures {
         return t
     }
 }
+#endif

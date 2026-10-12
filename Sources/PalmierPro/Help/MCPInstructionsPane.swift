@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -320,3 +321,4 @@ private struct CopyButton: View {
         .frame(width: AppTheme.Settings.contentMaxWidth, height: AppTheme.Settings.skillDetailMinHeight)
         .background(AppTheme.Background.surfaceColor)
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Preview-tab management: the timeline tab plus any media-asset source tabs
@@ -128,3 +129,4 @@ extension EditorViewModel {
         previewTabHistoryIndex = previewTabHistory.count - 1
     }
 }
+#endif

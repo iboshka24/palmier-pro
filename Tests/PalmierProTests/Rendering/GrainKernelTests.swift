@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -46,3 +47,4 @@ struct GrainKernelTests {
         #expect(diff > 0.01, "different frames produce different grain")
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 fileprivate struct ApplyLayoutInput: DecodableToolArgs {
@@ -195,3 +196,4 @@ extension ToolExecutor {
         )
     }
 }
+#endif

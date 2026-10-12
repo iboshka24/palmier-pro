@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import ImageIO
 import UniformTypeIdentifiers
@@ -167,3 +168,4 @@ enum ImageEncoder {
         return CGImageSourceCreateThumbnailAtIndex(source, 0, options)
     }
 }
+#endif

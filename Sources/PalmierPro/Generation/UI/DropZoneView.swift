@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -52,3 +53,4 @@ final class DropTargetNSView: NSView {
         return true
     }
 }
+#endif

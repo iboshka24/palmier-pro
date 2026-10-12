@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum EditAction {
@@ -218,3 +219,4 @@ enum EditActionAvailability: Equatable {
         return nil
     }
 }
+#endif

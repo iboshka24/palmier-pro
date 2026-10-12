@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -30,3 +31,4 @@ struct ExternalAgentLogo: View {
         .accessibilityHidden(true)
     }
 }
+#endif

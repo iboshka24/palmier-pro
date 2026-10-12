@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -31,3 +32,4 @@ struct TextTokenizerTests {
         #expect(long.allSatisfy { $0 != 0 })
     }
 }
+#endif

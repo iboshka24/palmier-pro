@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 fileprivate struct SetProjectSettingsInput: DecodableToolArgs {
@@ -134,3 +135,4 @@ extension ToolExecutor {
         return notes.isEmpty ? nil : notes.joined(separator: " ")
     }
 }
+#endif

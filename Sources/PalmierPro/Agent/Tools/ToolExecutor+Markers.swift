@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 private struct ManageMarkersInput: DecodableToolArgs {
@@ -86,3 +87,4 @@ extension ToolExecutor {
         return .ok(Self.jsonString(payload) ?? "{}")
     }
 }
+#endif

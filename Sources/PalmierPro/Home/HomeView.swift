@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct HomeView: View {
@@ -164,3 +165,4 @@ final class HomeWindowController: NSWindowController {
     @available(*, unavailable)
     required init?(coder: NSCoder) { fatalError() }
 }
+#endif

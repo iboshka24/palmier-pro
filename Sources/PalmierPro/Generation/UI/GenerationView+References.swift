@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 // Reference strips, drop zones, and the ref-pool bookkeeping behind them.
@@ -420,3 +421,4 @@ extension GenerationView {
         return L10n.string("Source Media")
     }
 }
+#endif

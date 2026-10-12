@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -83,3 +84,4 @@ struct SearchIndexPreflightTests {
         #expect(!result.needsTranscript)
     }
 }
+#endif

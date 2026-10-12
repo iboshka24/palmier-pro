@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 enum HelpTab: String, CaseIterable, Identifiable {
@@ -140,3 +141,4 @@ final class HelpWindowController: NSWindowController {
 #Preview {
     HelpView()
 }
+#endif

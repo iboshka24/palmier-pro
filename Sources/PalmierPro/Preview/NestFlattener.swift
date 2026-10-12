@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 
@@ -72,3 +73,4 @@ enum NestFlattener {
         )
     }
 }
+#endif

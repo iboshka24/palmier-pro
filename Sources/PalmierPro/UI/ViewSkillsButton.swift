@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ViewSkillsButton: View {
@@ -18,3 +19,4 @@ struct ViewSkillsButton: View {
         SettingsWindowController.shared.show(tab: .skills)
     }
 }
+#endif

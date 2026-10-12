@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -163,3 +164,4 @@ struct PalmierProjectExportTests {
         #expect(fm.fileExists(atPath: dest.appendingPathComponent(Project.timelineFilename).path))
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -49,3 +50,4 @@ struct CustomAspectRatioTests {
         #expect(!AspectPreset.sixteenNine.matches(width: 3840, height: 2160))
     }
 }
+#endif

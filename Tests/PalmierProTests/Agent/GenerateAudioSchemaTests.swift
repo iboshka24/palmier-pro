@@ -1,3 +1,4 @@
+#if os(macOS)
 import MCP
 import Testing
 @testable import PalmierPro
@@ -16,3 +17,4 @@ struct GenerateAudioSchemaTests {
         #expect(properties["multilingual"] != nil)
     }
 }
+#endif

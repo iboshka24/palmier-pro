@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 import Testing
@@ -116,3 +117,4 @@ import Testing
         #expect(specs.map(\.durationFrames) == [27, 33, 24])
     }
 }
+#endif

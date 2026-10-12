@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -682,3 +683,4 @@ struct ClearRegionTests {
         #expect(e.timeline.tracks[0].clips[0].durationFrames == 30)
     }
 }
+#endif

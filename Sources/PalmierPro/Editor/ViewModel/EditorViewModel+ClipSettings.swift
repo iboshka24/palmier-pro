@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct ClipSettingsSnapshot: Sendable {
@@ -155,3 +156,4 @@ extension EditorViewModel {
         return result
     }
 }
+#endif

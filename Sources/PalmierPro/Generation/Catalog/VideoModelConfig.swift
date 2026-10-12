@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 func unsupportedValue(model displayName: String, field: String, value: String, allowed: [String]) -> String {
@@ -246,3 +247,4 @@ struct VideoGenerationParams: Encodable, Sendable {
         try c.encodeIfPresent(draft, forKey: .draft)
     }
 }
+#endif

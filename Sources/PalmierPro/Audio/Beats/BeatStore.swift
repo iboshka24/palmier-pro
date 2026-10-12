@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Stores beats for each mediaRef. Avoids doing the same detection twice.
@@ -129,3 +130,4 @@ extension EditorViewModel {
         return Array(Set(frames))
     }
 }
+#endif

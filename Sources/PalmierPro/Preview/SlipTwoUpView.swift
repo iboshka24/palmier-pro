@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import SwiftUI
 
@@ -116,3 +117,4 @@ private enum SlipFrameLoader {
         return (start, end)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Observation
 
@@ -114,3 +115,4 @@ final class OnboardingStore {
         step = destination
     }
 }
+#endif

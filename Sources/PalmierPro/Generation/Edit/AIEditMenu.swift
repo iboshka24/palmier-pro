@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 // AI Edit menu for a media asset's context menu.
@@ -149,3 +150,4 @@ struct AIEditMenu: View {
         editor.seedGenerationPanel(asset: asset, stored: stored)
     }
 }
+#endif

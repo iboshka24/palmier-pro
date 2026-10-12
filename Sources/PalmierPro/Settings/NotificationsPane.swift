@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct NotificationsPane: View {
@@ -17,3 +18,4 @@ struct NotificationsPane: View {
         }
     }
 }
+#endif

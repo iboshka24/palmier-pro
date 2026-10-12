@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct StoragePane: View {
@@ -167,3 +168,4 @@ struct StoragePane: View {
         modelBytes = sizes.model
     }
 }
+#endif

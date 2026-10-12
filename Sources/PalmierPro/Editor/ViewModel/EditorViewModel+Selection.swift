@@ -1,3 +1,4 @@
+#if os(macOS)
 extension EditorViewModel {
     enum SelectForwardScope {
         case track
@@ -52,3 +53,4 @@ extension EditorViewModel {
             .id
     }
 }
+#endif

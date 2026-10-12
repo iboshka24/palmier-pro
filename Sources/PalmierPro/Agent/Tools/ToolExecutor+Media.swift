@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 import ImageIO
@@ -384,3 +385,4 @@ extension ToolExecutor {
         return out.isEmpty ? nil : out
     }
 }
+#endif

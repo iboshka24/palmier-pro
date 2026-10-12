@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 private struct UpscaleOptionGroup: Identifiable {
@@ -167,3 +168,4 @@ extension GenerationView {
     }
 
 }
+#endif

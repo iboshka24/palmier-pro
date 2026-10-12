@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // Folders use paths ("Hero shots/Takes"), not ids. Paths resolve case-insensitively; creating missing segments.
@@ -275,3 +276,4 @@ extension ToolExecutor {
         editor.timelines.reduce(0) { sum, t in sum + t.tracks.reduce(0) { $0 + $1.clips.count } }
     }
 }
+#endif

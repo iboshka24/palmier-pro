@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -22,3 +23,4 @@ struct VideoEngineRebuildTests {
         #expect(engine.rebuildTask == nil)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct AudioGenerationParams: Encodable, Sendable {
@@ -189,3 +190,4 @@ struct AudioModelConfig: Identifiable, Sendable {
         return nil
     }
 }
+#endif

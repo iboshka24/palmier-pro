@@ -1,3 +1,4 @@
+#if os(macOS)
 struct SilenceRemovalSettings: Equatable, Sendable {
     static let minimumPauseRange = 0.25...3.0
     static let speechPaddingRange = 0.0...0.5
@@ -155,3 +156,4 @@ enum SilenceRemovalPlanner {
         return max(0, Int(count))
     }
 }
+#endif

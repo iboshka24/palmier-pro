@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 extension EditorViewModel {
@@ -561,3 +562,4 @@ extension EditorViewModel {
     }
 
 }
+#endif

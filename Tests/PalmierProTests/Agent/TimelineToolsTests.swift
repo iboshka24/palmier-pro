@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -215,3 +216,4 @@ struct TimelineToolsTests {
         #expect(h.editor.timelines.count == 1)
     }
 }
+#endif

@@ -1,16 +1,24 @@
+import Foundation
+#if canImport(AppKit)
 import AppKit
+#endif
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
 
 enum AppTheme {
 
+#if canImport(AppKit)
     private static func adaptive(light: NSColor, dark: NSColor) -> NSColor {
         NSColor(name: nil) { appearance in
             appearance.bestMatch(from: [.aqua, .darkAqua]) == .darkAqua ? dark : light
         }
     }
+#endif
 
     // MARK: - Backgrounds
 
+#if canImport(AppKit)
     enum Background {
         static let base = AppTheme.adaptive(
             light: NSColor(red: 241/255, green: 240/255, blue: 237/255, alpha: 1),
@@ -40,9 +48,11 @@ enum AppTheme {
         static var placeholderColor: Color { Color(placeholder) }
         static var clearColor: Color { .clear }
     }
+#endif
 
     // MARK: - Borders
 
+#if canImport(AppKit)
     enum Border {
         static let primary = AppTheme.adaptive(
             light: NSColor.black.withAlphaComponent(0.20),
@@ -69,6 +79,7 @@ enum AppTheme {
         static var subtleColor: Color { Color(subtle) }
         static var dividerColor: Color { Color(divider) }
     }
+#endif
 
     // MARK: - Border widths
 
@@ -81,6 +92,7 @@ enum AppTheme {
 
     // MARK: - Accent
 
+#if canImport(AppKit)
     enum Accent {
         static let timecodeNSColor = AppTheme.adaptive(
             light: NSColor(red: 0.58, green: 0.29, blue: 0.02, alpha: 1),
@@ -113,13 +125,17 @@ enum AppTheme {
             endPoint: .bottomTrailing
         )
     }
+#endif
 
+#if canImport(AppKit)
     enum Update {
         static let accent = Accent.timecodeColor
     }
+#endif
 
     // MARK: - Adjust sliders
 
+#if canImport(AppKit)
     enum Slider {
         static let trackHeight: CGFloat = 4
         static let thumbSize: CGFloat = 10
@@ -131,7 +147,9 @@ enum AppTheme {
         /// Master luma track: near-black → near-white.
         static let lumaGradient = [Color(white: 0.05), Color(white: 0.95)]
     }
+#endif
 
+#if canImport(AppKit)
     enum AudioMeter {
         static let panelWidth: CGFloat = 32
         static let barWidth: CGFloat = 8
@@ -145,16 +163,20 @@ enum AppTheme {
         static let yellowSegment = Color(red: 0.98, green: 0.84, blue: 0.10)
         static let redSegment = Color(red: 0.90, green: 0.24, blue: 0.20)
     }
+#endif
 
     // MARK: - Color wheels
 
+#if canImport(AppKit)
     enum Wheels {
         static let padSize: CGFloat = 96
         static let puckSize: CGFloat = 10
         static let ringWidth: CGFloat = 1
         static let crosshairColor = Color.white.opacity(AppTheme.Opacity.faint)
     }
+#endif
 
+#if canImport(AppKit)
     enum Curve {
         static let editorHeight: CGFloat = 180
         static let pointDiameter: CGFloat = 9
@@ -165,9 +187,11 @@ enum AppTheme {
         static let greenColor = Color(red: 0.32, green: 0.82, blue: 0.36)
         static let blueColor = Color(red: 0.32, green: 0.56, blue: 1)
     }
+#endif
 
     // MARK: - Status
 
+#if canImport(AppKit)
     enum Status {
         static let error = AppTheme.adaptive(
             light: NSColor(red: 0.70, green: 0.14, blue: 0.09, alpha: 1),
@@ -189,7 +213,9 @@ enum AppTheme {
 
         static var pendingColor: Color { Color(NSColor.systemYellow) }
     }
+#endif
 
+#if canImport(AppKit)
     enum AgentActivity {
         static let added = NSColor.systemGreen
         static let mutated = NSColor.systemOrange
@@ -205,6 +231,7 @@ enum AppTheme {
         static let readGlowOpacity: Float = 0.35
         static let readGlowRadius: CGFloat = 4
     }
+#endif
 
     enum TimelineMarker {
         static let flagWidth: CGFloat = 10
@@ -222,6 +249,7 @@ enum AppTheme {
 
     // MARK: - Text
 
+#if canImport(AppKit)
     enum Text {
         static let primary = AppTheme.adaptive(
             light: NSColor.black.withAlphaComponent(0.92),
@@ -245,17 +273,21 @@ enum AppTheme {
         static var tertiaryColor: Color { Color(tertiary) }
         static var mutedColor: Color { Color(muted) }
     }
+#endif
 
     // MARK: - Interaction fills
 
+#if canImport(AppKit)
     enum Interaction {
         static func fill(_ opacity: Double) -> Color {
             AppTheme.Text.primaryColor.opacity(opacity)
         }
     }
+#endif
 
     // MARK: - Media overlays
 
+#if canImport(AppKit)
     enum MediaOverlay {
         static let background = NSColor.black
         static let primary = NSColor.white
@@ -271,6 +303,7 @@ enum AppTheme {
         static var mutedColor: Color { Color(muted) }
         static var errorColor: Color { Color(error) }
     }
+#endif
 
     // MARK: - Opacity
 
@@ -292,6 +325,7 @@ enum AppTheme {
 
     // MARK: - Track type colors
 
+#if canImport(AppKit)
     enum TrackColor {
         static var video: NSColor { TimelineClipColorPalette.shared.color(for: .video) }
         static var audio: NSColor { TimelineClipColorPalette.shared.color(for: .audio) }
@@ -322,6 +356,7 @@ enum AppTheme {
             return linear(red) * 0.2126 + linear(green) * 0.7152 + linear(blue) * 0.0722
         }
     }
+#endif
 
     // MARK: - Corner radii
 
@@ -375,6 +410,7 @@ enum AppTheme {
 
     // MARK: - Font weights
 
+#if canImport(AppKit)
     enum FontWeight {
         static let light: Font.Weight = .light
         static let regular: Font.Weight = .regular
@@ -382,6 +418,7 @@ enum AppTheme {
         static let semibold: Font.Weight = .semibold
         static let bold: Font.Weight = .bold
     }
+#endif
 
     // MARK: - Tracking (letter-spacing)
 
@@ -437,6 +474,7 @@ enum AppTheme {
         static let updateOverlayWidth: CGFloat = 640
     }
 
+#if canImport(AppKit)
     enum Onboarding {
         static let cardWidth: CGFloat = 520
         static let cardHeight: CGFloat = 420
@@ -445,6 +483,7 @@ enum AppTheme {
             AppTheme.Accent.primary.opacity(AppTheme.Opacity.muted)
         }
     }
+#endif
 
     enum Settings {
         static let sidebarWidth: CGFloat = 220
@@ -472,12 +511,14 @@ enum AppTheme {
         static let compactNumericFieldWidth: CGFloat = 36
         static let fontMenuWidth: CGFloat = 160
         static let textEditorMinHeight: CGFloat = 96
+#if canImport(SwiftUI)
         static let contentInsets = EdgeInsets(
             top: Spacing.smMd,
             leading: Spacing.smMd + IconSize.xs + Spacing.sm,
             bottom: Spacing.smMd,
             trailing: Spacing.smMd
         )
+#endif
     }
 
     enum Window {
@@ -542,13 +583,16 @@ enum AppTheme {
 
     // MARK: - Shadows
 
+#if canImport(AppKit)
     struct ShadowStyle {
         let color: Color
         let radius: CGFloat
         let x: CGFloat
         let y: CGFloat
     }
+#endif
 
+#if canImport(AppKit)
     enum Shadow {
         static let sm = ShadowStyle(color: .black.opacity(0.3), radius: 1, x: 0, y: 0.5)
         static let md = ShadowStyle(color: .black.opacity(0.3), radius: 4, x: 0, y: 2)
@@ -560,6 +604,7 @@ enum AppTheme {
             y: -Spacing.smMd
         )
     }
+#endif
 
     // MARK: - Animation durations
 
@@ -579,6 +624,7 @@ enum AppTheme {
 
 // MARK: - Shadow view modifier
 
+#if canImport(SwiftUI)
 extension View {
     func shadow(_ style: AppTheme.ShadowStyle) -> some View {
         shadow(color: style.color, radius: style.radius, x: style.x, y: style.y)
@@ -597,9 +643,11 @@ extension View {
             }
     }
 }
+#endif
 
 // MARK: - ClipType color mapping
 
+#if canImport(AppKit)
 extension ClipType {
     var themeColor: NSColor {
         switch self {
@@ -617,3 +665,4 @@ extension ClipType {
         AppTheme.TrackColor.readableForeground(on: themeColor)
     }
 }
+#endif

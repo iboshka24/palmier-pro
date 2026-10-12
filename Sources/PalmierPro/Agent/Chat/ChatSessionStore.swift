@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct ChatSession: Codable, Identifiable {
@@ -59,3 +60,4 @@ enum ChatSessionStore {
         try? encoder.encode(session)
     }
 }
+#endif

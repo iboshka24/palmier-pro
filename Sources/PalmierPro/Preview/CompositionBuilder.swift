@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 
 struct TrackMapping: @unchecked Sendable {
@@ -990,3 +991,4 @@ enum CompositionBuilder {
     }
 
 }
+#endif

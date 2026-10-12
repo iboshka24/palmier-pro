@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -50,3 +51,4 @@ struct HighlightsShadowsKernelTests {
         #expect(abs((out.1 - out.2) - (inRGB.1 - inRGB.2)) < 0.01, "g−b preserved")
     }
 }
+#endif

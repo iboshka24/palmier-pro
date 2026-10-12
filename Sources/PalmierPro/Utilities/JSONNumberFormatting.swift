@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(CoreFoundation)
+import CoreFoundation
+#endif
 
 func roundJSONFloatingPointNumbers(_ value: Any, toPlaces places: Int) -> Any {
     if let dict = value as? [String: Any] {

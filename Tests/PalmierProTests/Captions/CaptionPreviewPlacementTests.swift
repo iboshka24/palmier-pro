@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Testing
 @testable import PalmierPro
@@ -64,3 +65,4 @@ struct CaptionPreviewPlacementTests {
         #expect(first == second)
     }
 }
+#endif

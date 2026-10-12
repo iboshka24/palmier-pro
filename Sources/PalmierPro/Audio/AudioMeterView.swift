@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct AudioMeterView: View {
@@ -245,3 +246,4 @@ private struct AudioMeterLevelPaths {
         if hasClipping { context.fill(clipping, with: .color(AppTheme.Status.errorColor)) }
     }
 }
+#endif

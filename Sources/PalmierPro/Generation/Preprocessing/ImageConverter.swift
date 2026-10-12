@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum ImageConverter {
@@ -40,3 +41,4 @@ enum ImageConverter {
         try? FileManager.default.removeItem(at: url)
     }
 }
+#endif

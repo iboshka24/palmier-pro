@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 import Testing
@@ -76,3 +77,4 @@ struct OverviewRendererTests {
         guard writer.status == .completed else { throw writer.error ?? CocoaError(.fileWriteUnknown) }
     }
 }
+#endif

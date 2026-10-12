@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreML
 import CoreVideo
 import CoreGraphics
@@ -86,3 +87,4 @@ final class VisualEmbedder: @unchecked Sendable {
         return buffer
     }
 }
+#endif

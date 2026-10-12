@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 import Speech
@@ -348,3 +349,4 @@ enum Transcription {
         )
     }
 }
+#endif

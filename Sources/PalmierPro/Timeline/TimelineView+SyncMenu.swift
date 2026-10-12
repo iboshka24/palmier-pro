@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 extension TimelineView {
@@ -50,3 +51,4 @@ extension TimelineView {
         return L10n.string("\(summary): \(details.joined(separator: ", ")).")
     }
 }
+#endif

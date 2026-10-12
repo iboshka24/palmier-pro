@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct AIEditTab: View {
@@ -521,3 +522,4 @@ struct AIEditTab: View {
     }
 
 }
+#endif

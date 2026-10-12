@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import AVFoundation
 
@@ -579,3 +580,4 @@ final class ScrubAudioEngine {
         return PCMWindow(startSample: startSample, left: leftSamples, right: rightSamples, hasAudioTracks: true)
     }
 }
+#endif

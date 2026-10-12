@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -54,3 +55,4 @@ struct EditorTimelineRangeTests {
         #expect(editor.validSelectedTimelineRange == nil)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct ExportTimelineAnalyticsInput: Sendable {
@@ -235,3 +236,4 @@ enum ExportTimelineAnalyticsSnapshot {
         return cleaned.isEmpty ? "unknown" : String(cleaned.prefix(255))
     }
 }
+#endif

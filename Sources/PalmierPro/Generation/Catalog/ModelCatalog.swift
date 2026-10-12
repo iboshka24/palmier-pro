@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Combine
 @preconcurrency import ConvexMobile
@@ -325,3 +326,4 @@ struct UpscaleCaps: Decodable, Sendable {
     let numericSettings: [UpscaleNumericSetting]?
     let toggleSettings: [UpscaleToggleSetting]?
 }
+#endif

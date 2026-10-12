@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Combine
 @preconcurrency import ConvexMobile
@@ -136,3 +137,4 @@ private struct UrlResponse: Decodable, Sendable {
 private struct SubmitGenerationResult: Decodable, Sendable {
     let jobId: String
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import CryptoKit
 import Foundation
 
@@ -119,3 +120,4 @@ struct EmbeddingStore {
     }
 
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import CoreText
 import Foundation
@@ -117,3 +118,4 @@ enum BundledFonts {
         return true
     }
 }
+#endif

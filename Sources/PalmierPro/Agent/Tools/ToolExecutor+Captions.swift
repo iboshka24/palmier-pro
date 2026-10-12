@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 
@@ -139,3 +140,4 @@ extension ToolExecutor {
         return value
     }
 }
+#endif

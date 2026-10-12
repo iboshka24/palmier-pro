@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct AudioPanelTab: View {
@@ -27,3 +28,4 @@ struct AudioPanelTab: View {
         .background(AppTheme.Background.surfaceColor)
     }
 }
+#endif

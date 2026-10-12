@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Snapshot of one copied clip plus its position relative to the copy anchor
@@ -162,3 +163,4 @@ private extension EditorViewModel {
         return newIds
     }
 }
+#endif

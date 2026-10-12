@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TopOffField<Trailing: View>: View {
@@ -99,3 +100,4 @@ extension TopOffField where Trailing == EmptyView {
         )
     }
 }
+#endif

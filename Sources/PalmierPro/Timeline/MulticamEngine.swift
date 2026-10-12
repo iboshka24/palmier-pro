@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum MulticamEngine {
@@ -285,3 +286,4 @@ private extension Clip {
             || volumeTrack != nil
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 // MARK: - UserAvatar
@@ -131,3 +132,4 @@ struct IdentityStrip: View {
         .padding(.vertical, AppTheme.Spacing.lg)
     }
 }
+#endif

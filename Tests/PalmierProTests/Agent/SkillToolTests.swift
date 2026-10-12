@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -200,3 +201,4 @@ struct SkillToolTests {
         try? FileManager.default.removeItem(at: directory)
     }
 }
+#endif

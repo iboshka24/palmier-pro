@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import CoreImage
 
@@ -57,3 +58,4 @@ actor CaptionPreviewRasterizer {
         return Task.isCancelled ? nil : image
     }
 }
+#endif

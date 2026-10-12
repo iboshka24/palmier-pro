@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 // Cost estimation, preflight validation, submission, and panel seeding/reset.
@@ -650,3 +651,4 @@ extension GenerationView {
         upscaleSettings = upscaleModel.normalizedSettings(upscaleModel.defaultSettings, source: upscaleSource)
     }
 }
+#endif

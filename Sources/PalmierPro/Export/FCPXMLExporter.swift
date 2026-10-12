@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import CoreText
 import Foundation
@@ -1018,3 +1019,4 @@ private func escapeFCPXML(_ s: String) -> String {
      .replacingOccurrences(of: "\"", with: "&quot;")
      .replacingOccurrences(of: "'", with: "&apos;")
 }
+#endif

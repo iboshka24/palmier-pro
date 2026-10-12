@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Observation
 
@@ -51,3 +52,4 @@ final class WorkspaceLayoutStore {
         selection = LayoutPreset.stored(in: defaults)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Project-level timeline settings: FPS, resolution, and the mismatch dialog that
@@ -205,3 +206,4 @@ extension Timeline {
         }
     }
 }
+#endif

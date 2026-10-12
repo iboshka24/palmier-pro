@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -201,3 +202,4 @@ struct TextAnimationRenderTests {
         ])
     }
 }
+#endif

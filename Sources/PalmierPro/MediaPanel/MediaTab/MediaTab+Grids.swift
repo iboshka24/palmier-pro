@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -551,3 +552,4 @@ private struct TileDragPreview: View {
         .shadow(color: AppTheme.MediaOverlay.backgroundColor.opacity(AppTheme.Opacity.medium), radius: 4, y: 2)
     }
 }
+#endif

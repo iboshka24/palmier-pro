@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -45,3 +46,4 @@ struct LinkEligibilityTests {
         #expect(e.unlinkTargets(for: ["v2", "a2"]).isEmpty)
     }
 }
+#endif

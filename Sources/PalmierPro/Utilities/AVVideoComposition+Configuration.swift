@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 
 extension AVVideoComposition {
@@ -14,3 +15,4 @@ extension AVVideoComposition {
         return config
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -455,3 +456,4 @@ struct ProjectFilePersistenceTests {
         #expect(e.openTimelineIds == [b.id, a.id])
     }
 }
+#endif

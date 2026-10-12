@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import AppKit
 import Testing
@@ -79,3 +80,4 @@ struct LottieDotLottieTests {
         #expect(try alpha(mid, x: w / 4, y: h / 2) < 0.2)
     }
 }
+#endif

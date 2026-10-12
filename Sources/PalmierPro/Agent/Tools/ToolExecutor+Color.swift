@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 import Foundation
@@ -552,3 +553,4 @@ private struct GradeState {
         return (r * cos(a), r * sin(a))
     }
 }
+#endif

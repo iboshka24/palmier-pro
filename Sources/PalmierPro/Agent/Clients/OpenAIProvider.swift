@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum OpenAIRequestBody {
@@ -275,3 +276,4 @@ struct OpenAIStreamParser {
     }
 
 }
+#endif

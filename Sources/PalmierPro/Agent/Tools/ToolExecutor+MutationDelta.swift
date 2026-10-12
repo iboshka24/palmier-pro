@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // Clip mutations return timeline diffs using get_timeline format, showing changed, shifted, or removed clips.
@@ -197,3 +198,4 @@ extension ToolExecutor {
             }
     }
 }
+#endif

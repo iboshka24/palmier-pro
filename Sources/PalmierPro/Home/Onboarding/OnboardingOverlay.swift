@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct OnboardingOverlay: View {
@@ -167,3 +168,4 @@ struct OnboardingOverlay: View {
         }
     }
 }
+#endif

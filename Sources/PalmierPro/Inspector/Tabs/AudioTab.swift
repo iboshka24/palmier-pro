@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 extension InspectorView {
@@ -154,3 +155,4 @@ extension InspectorView {
         .frame(height: AppTheme.EditorPanel.fieldMinHeight)
     }
 }
+#endif

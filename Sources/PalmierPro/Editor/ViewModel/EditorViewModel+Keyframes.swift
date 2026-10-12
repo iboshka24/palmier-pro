@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 struct KeyframeLaneNavigationTarget: Equatable {
@@ -459,3 +460,4 @@ extension EditorViewModel {
         commitClipProperty(clipId: clipId, actionName: "Move Keyframe") { _ in /* applied during drag */ }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 import Testing
@@ -108,3 +109,4 @@ struct TextExportGlyphTests {
         return result
     }
 }
+#endif

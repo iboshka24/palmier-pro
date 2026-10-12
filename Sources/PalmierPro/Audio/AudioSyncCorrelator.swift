@@ -1,3 +1,4 @@
+#if os(macOS)
 import Accelerate
 import Foundation
 
@@ -316,3 +317,4 @@ private extension Int {
         return overflow ? .min : result
     }
 }
+#endif

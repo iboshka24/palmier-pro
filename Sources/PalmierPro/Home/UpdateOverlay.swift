@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// Shown once over Home after the app updates to a new version.
@@ -90,3 +91,4 @@ struct UpdateOverlay: View {
         }
     }
 }
+#endif

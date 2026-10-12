@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Builds the application main menu with keyboard shortcuts.
@@ -209,3 +210,4 @@ enum MainMenuBuilder {
     func setLayoutMedia(_ sender: Any?)
     func setLayoutVertical(_ sender: Any?)
 }
+#endif

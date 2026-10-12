@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum VideoToAudioEditKind {
@@ -82,3 +83,4 @@ enum VideoToAudioEditKind {
         }
     }
 }
+#endif

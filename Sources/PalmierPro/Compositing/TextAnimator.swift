@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 
 /// Pure per-frame evaluator for text animation
@@ -133,3 +134,4 @@ enum TextAnimator {
         )
     }
 }
+#endif

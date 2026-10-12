@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct CreditSummaryView: View {
@@ -148,3 +149,4 @@ private struct CreditActionsPopover: View {
         isPresented = false
     }
 }
+#endif

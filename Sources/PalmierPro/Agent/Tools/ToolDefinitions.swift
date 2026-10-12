@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 
@@ -1434,3 +1435,4 @@ enum ToolArgsBridge {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 private struct ReferenceAssetPreview: View {
@@ -154,3 +155,4 @@ struct FrameSlot: View {
         }
     }
 }
+#endif

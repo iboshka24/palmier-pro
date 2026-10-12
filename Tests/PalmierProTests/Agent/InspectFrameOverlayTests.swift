@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import CoreGraphics
 import Testing
@@ -141,3 +142,4 @@ struct InspectFrameOverlayTests {
         return false
     }
 }
+#endif

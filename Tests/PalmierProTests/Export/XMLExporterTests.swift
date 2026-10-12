@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -981,3 +982,4 @@ extension XMLExporterTests {
         #expect(xml.contains("<out>42</out>"))
     }
 }
+#endif

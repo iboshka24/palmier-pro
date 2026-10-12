@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct ImageGenerationParams: Encodable, Sendable {
@@ -114,3 +115,4 @@ struct ImageModelConfig: Identifiable, Sendable {
         }
     }
 }
+#endif

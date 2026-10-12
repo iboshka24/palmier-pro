@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -242,3 +243,4 @@ private actor ControlledBeatCacheLoader {
         return true
     }
 }
+#endif

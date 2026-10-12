@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct AudioGenerationSubmission {
@@ -160,3 +161,4 @@ struct AudioGenerationSubmission {
         }
     }
 }
+#endif

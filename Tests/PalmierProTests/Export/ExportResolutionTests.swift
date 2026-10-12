@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Testing
 @testable import PalmierPro
@@ -90,3 +91,4 @@ struct ExportResolutionTests {
         #expect(size.height >= 2)
     }
 }
+#endif

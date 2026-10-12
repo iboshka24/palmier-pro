@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Testing
 @testable import PalmierPro
@@ -74,3 +75,4 @@ struct BeatDetectorTests {
         #expect(seam.count >= 3, "beats missing around chunk seam: \(seam)")
     }
 }
+#endif

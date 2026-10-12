@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct ChangelogFeed: Decodable {
@@ -61,3 +62,4 @@ final class ChangelogStore {
         return nil
     }
 }
+#endif

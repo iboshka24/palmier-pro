@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// Fenced code blocks render as styled panels; inline + headings collapse into a single
@@ -279,3 +280,4 @@ struct MarkdownText: View {
         return (level, body)
     }
 }
+#endif

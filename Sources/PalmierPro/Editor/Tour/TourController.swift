@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Observation
 
@@ -245,3 +246,4 @@ final class TourController {
         return nil
     }
 }
+#endif

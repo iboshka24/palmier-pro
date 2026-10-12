@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TimelineTabBar: View {
@@ -169,3 +170,4 @@ private struct TimelineTabBarContent: View, Equatable {
     }
 
 }
+#endif

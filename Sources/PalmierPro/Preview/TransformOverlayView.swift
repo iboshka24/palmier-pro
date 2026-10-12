@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TransformOverlayView: View {
@@ -390,3 +391,4 @@ enum TransformOverlayMath {
         return (moved, guides)
     }
 }
+#endif

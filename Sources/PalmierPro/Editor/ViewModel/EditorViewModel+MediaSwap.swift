@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct ClipMediaSwapPlan {
@@ -121,3 +122,4 @@ extension EditorViewModel {
         return ids
     }
 }
+#endif

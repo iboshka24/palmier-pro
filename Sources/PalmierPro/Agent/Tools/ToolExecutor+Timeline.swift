@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // get_timeline, create_timeline, set_active_timeline.
@@ -634,3 +635,4 @@ extension ToolExecutor {
 
     private static func intValue(_ v: Any?) -> Int { (v as? NSNumber)?.intValue ?? 0 }
 }
+#endif

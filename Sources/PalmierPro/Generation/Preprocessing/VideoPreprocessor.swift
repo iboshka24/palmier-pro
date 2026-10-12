@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -110,3 +111,4 @@ enum VideoPreprocessor {
         }
     }
 }
+#endif

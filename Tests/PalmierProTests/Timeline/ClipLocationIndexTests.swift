@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -56,3 +57,4 @@ struct ClipLocationIndexTests {
         #expect(e.findClip(id: "other") == ClipLocation(trackIndex: 0, clipIndex: 0))
     }
 }
+#endif

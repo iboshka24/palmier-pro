@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 
@@ -215,3 +216,4 @@ extension ToolExecutor {
         doc.editorViewModel.agentService.postSystemNotice("Now editing: \(name)")
     }
 }
+#endif

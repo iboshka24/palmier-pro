@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ThinkingDots: View {
@@ -17,3 +18,4 @@ struct ThinkingDots: View {
         .onReceive(timer) { _ in phase = (phase + 1) % 3 }
     }
 }
+#endif

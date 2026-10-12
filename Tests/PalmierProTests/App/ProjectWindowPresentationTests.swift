@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Testing
 @testable import PalmierPro
@@ -73,3 +74,4 @@ struct ProjectWindowPresentationTests {
         HomeWindowController.shared.window?.orderOut(nil)
     }
 }
+#endif

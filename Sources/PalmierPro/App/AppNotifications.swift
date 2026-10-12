@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import UserNotifications
@@ -180,3 +181,4 @@ private final class AppNotificationDelegate: NSObject, UNUserNotificationCenterD
         await AppState.shared.revealGeneratedAssetFromNotification(assetId: assetId, projectURL: projectURL)
     }
 }
+#endif

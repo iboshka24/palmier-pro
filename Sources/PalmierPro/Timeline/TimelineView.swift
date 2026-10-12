@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -2068,3 +2069,4 @@ private final class TimelineCanvasView: NSView {
         timeline.drawContent(in: dirtyRect.offsetBy(dx: origin.x, dy: origin.y), context: ctx)
     }
 }
+#endif

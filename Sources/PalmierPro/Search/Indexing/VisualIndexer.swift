@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 import ImageIO
@@ -85,3 +86,4 @@ enum VisualIndexer {
         try EmbeddingStore.save(header: header, rows: rows, vectors: vectors, key: key)
     }
 }
+#endif

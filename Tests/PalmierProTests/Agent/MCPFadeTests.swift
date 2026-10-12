@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Testing
@@ -94,3 +95,4 @@ struct MCPFadeTests {
         throw CocoaError(.coderReadCorrupt)
     }
 }
+#endif

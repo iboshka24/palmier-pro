@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -1033,3 +1034,4 @@ struct FCPXMLNestExportTests {
         #expect(!xml.contains("<ref-clip"))
     }
 }
+#endif

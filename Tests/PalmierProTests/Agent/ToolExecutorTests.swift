@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 import ImageIO
@@ -2820,3 +2821,4 @@ struct SetClipPropertiesTests {
         #expect(h.editor.timeline.tracks[0].clips[0].wordTimings == nil)
     }
 }
+#endif

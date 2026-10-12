@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -59,3 +60,4 @@ struct TrackDisplayLabelTests {
         #expect(editor.timelineTrackDisplayLabel(at: 2) == "T1")
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct ParsedTextColorPatch {
@@ -707,3 +708,4 @@ extension ToolExecutor {
         )
     }
 }
+#endif

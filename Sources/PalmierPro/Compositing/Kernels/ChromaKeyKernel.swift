@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -14,3 +15,4 @@ enum ChromaKeyKernel {
                                         Float(softness), Float(spill)]) ?? image
     }
 }
+#endif

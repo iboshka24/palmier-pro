@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -204,3 +205,4 @@ struct ExportProjectToolTests {
         Issue.record("Export job did not finish")
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// A consistently aligned label and value row for editor panels.
@@ -67,3 +68,4 @@ struct EditorResetButton: View {
         .accessibilityLabel(L10n.string("Reset: \(title)"))
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 private struct EditorValueFieldModifier: ViewModifier {
@@ -82,3 +83,4 @@ struct EditorPrimaryButtonStyle: ButtonStyle {
 extension ButtonStyle where Self == EditorPrimaryButtonStyle {
     static var editorPrimary: EditorPrimaryButtonStyle { EditorPrimaryButtonStyle() }
 }
+#endif

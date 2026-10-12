@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -11,3 +12,4 @@ enum HighlightsShadowsKernel {
                             arguments: [image, Float(highlights), Float(shadows)]) ?? image
     }
 }
+#endif

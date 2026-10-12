@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Testing
@@ -120,3 +121,4 @@ struct MCPMarkerTests {
         return try #require(JSONSerialization.jsonObject(with: Data(text.utf8)) as? [String: Any])
     }
 }
+#endif

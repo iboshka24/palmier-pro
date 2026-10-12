@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct FolderTileView: View {
@@ -52,3 +53,4 @@ struct FolderTileView: View {
         }
     }
 }
+#endif

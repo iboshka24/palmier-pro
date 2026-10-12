@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 extension NSView {
@@ -367,3 +368,4 @@ private final class TimelineHeaderResizeHandleView: NSView {
         ))
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import CoreImage
 import CoreText
@@ -749,3 +750,4 @@ enum TextFrameRenderer {
         return String(h.finalize()) as NSString
     }
 }
+#endif

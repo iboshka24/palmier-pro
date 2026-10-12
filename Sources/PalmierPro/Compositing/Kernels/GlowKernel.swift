@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -18,3 +19,4 @@ enum GlowKernel {
                                arguments: [image, blurred, Float(intensity)]) ?? image
     }
 }
+#endif

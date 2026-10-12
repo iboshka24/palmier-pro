@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -107,3 +108,4 @@ struct TimecodeSyncTests {
         #expect((strict?.confidence ?? 1) < 0.5)
     }
 }
+#endif

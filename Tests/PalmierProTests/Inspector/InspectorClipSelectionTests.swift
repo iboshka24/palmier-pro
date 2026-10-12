@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -46,3 +47,4 @@ import Testing
         #expect(duration < .milliseconds(250))
     }
 }
+#endif

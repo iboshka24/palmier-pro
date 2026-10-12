@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreML
 import CryptoKit
 import Foundation
@@ -171,3 +172,4 @@ final class ModelDownloader: @unchecked Sendable {
         return entry
     }
 }
+#endif

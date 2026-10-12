@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -58,3 +59,4 @@ struct LUTTetraKernelTests {
         #expect(d(half, (0.5, 0.5, 0.5)) < 1e-2, "0.5 = halfway to inverted, got \(half)")
     }
 }
+#endif

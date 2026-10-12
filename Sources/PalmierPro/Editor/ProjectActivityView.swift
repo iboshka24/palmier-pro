@@ -1,3 +1,4 @@
+#if os(macOS)
 import Combine
 import SwiftUI
 
@@ -183,3 +184,4 @@ struct ProjectActivityButton: View {
         }
     }
 }
+#endif

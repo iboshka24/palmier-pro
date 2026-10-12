@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 
@@ -559,3 +560,4 @@ extension EditorViewModel {
         }
     }
 }
+#endif

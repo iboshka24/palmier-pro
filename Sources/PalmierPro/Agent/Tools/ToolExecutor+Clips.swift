@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // MARK: - Input shapes (Decodable)
@@ -1491,3 +1492,4 @@ extension ToolExecutor {
         return mutationResult(editor, since: snapshot, extra: extra)
     }
 }
+#endif

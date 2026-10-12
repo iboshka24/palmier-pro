@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension ToolExecutor {
@@ -73,3 +74,4 @@ extension ToolExecutor {
         return mutationResult(editor, since: snapshot, touched: input.clipIds, notes: notes)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 struct AgentActivityHighlight: Equatable {
     var readClipIds: Set<String> = []
     var addedClipIds: Set<String> = []
@@ -81,3 +82,4 @@ extension EditorViewModel {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -321,3 +322,4 @@ struct RemoveSilenceParamTests {
         #expect(harness.editor.timeline.tracks[1].clips == [second])
     }
 }
+#endif

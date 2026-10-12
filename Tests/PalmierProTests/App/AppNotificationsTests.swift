@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -28,3 +29,4 @@ struct AppNotificationsTests {
         #expect(AppNotifications.generationBody(assetName: " ", assetType: type, count: 1) == expected)
     }
 }
+#endif

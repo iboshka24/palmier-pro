@@ -1,3 +1,4 @@
+#if os(macOS)
 import os
 import Testing
 @testable import PalmierPro
@@ -70,3 +71,4 @@ private actor ControlledScrubReader {
         teardownCalls
     }
 }
+#endif

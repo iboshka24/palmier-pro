@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 extension EditorSplitViewController {
@@ -52,3 +53,4 @@ extension EditorSplitViewController {
         )
     }
 }
+#endif

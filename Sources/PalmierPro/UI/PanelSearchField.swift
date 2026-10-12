@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 private struct PanelSearchField: View {
@@ -110,3 +111,4 @@ struct ExpandablePanelSearch: View {
         expand()
     }
 }
+#endif

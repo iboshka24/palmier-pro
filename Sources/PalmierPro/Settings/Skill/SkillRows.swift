@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 enum SkillCommunityState: Equatable {
@@ -203,3 +204,4 @@ private struct SkillRowIcon: View {
             .accessibilityHidden(true)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum AudioTransformEditKind: CaseIterable, Equatable {
@@ -102,3 +103,4 @@ enum AudioTransformEditKind: CaseIterable, Equatable {
         return .available
     }
 }
+#endif

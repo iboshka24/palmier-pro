@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -121,3 +122,4 @@ import Testing
         #expect(index.currentRow(at: 100) == nil)
     }
 }
+#endif

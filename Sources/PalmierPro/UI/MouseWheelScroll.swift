@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// While the cursor is over the view, translate vertical mouse-wheel deltas into
@@ -46,3 +47,4 @@ extension View {
         modifier(MouseWheelHorizontalScroll())
     }
 }
+#endif

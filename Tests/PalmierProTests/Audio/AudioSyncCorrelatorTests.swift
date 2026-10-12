@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -211,3 +212,4 @@ struct AudioSyncCorrelatorTests {
         #expect(r.confidence > 0.99)
     }
 }
+#endif

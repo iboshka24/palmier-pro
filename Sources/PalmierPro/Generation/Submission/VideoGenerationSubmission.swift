@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Shared video generation submission assembly for UI and agent entry points.
@@ -427,3 +428,4 @@ struct VideoGenerationSubmission {
         assets.isEmpty ? nil : assets.map(\.id)
     }
 }
+#endif

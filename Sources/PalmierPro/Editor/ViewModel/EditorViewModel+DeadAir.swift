@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 enum DeadAirMaskResolver {
@@ -287,3 +288,4 @@ extension EditorViewModel {
         return range.length > 0 ? range : nil
     }
 }
+#endif

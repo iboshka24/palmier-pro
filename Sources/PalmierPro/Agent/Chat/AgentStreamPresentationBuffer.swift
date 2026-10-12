@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // Coalesces token deltas off-main so streamed chat cannot saturate SwiftUI layout.
@@ -210,3 +211,4 @@ func presentAgentStream(
     }
     return final
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct MyProjectsSection: View {
@@ -289,3 +290,4 @@ private struct NewProjectCard: View {
         .onHover { isHovered = $0 }
     }
 }
+#endif

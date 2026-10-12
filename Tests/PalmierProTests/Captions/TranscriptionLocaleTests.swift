@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -42,3 +43,4 @@ struct TranscriptionLocaleTests {
         #expect(result == nil)
     }
 }
+#endif

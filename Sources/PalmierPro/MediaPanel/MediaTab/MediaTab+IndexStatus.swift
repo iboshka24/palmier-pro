@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct MediaSearchIndexStatus: View {
@@ -80,3 +81,4 @@ struct MediaSearchIndexStatus: View {
         .animation(.linear(duration: AppTheme.Anim.transition), value: value)
     }
 }
+#endif

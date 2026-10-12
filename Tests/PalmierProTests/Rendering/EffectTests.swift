@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 import Foundation
@@ -408,3 +409,4 @@ enum ColorProbeHelpers {
         return data
     }
 }
+#endif

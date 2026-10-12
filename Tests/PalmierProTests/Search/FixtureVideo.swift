@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreVideo
 import Foundation
@@ -72,3 +73,4 @@ enum FixtureVideo {
         return buffer
     }
 }
+#endif

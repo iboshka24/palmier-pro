@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum AgentMentionContext {
@@ -188,3 +189,4 @@ struct AgentTimelineRangeMention: Hashable, Codable {
         ]
     }
 }
+#endif

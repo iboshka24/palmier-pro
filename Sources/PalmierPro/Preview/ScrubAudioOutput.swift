@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import os
 
@@ -267,3 +268,4 @@ final class ScrubAudioOutput: @unchecked Sendable {
         return buffer
     }
 }
+#endif

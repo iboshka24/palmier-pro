@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import Observation
@@ -167,3 +168,4 @@ final class TimelineClipColorStore {
 extension Notification.Name {
     static let timelineClipColorsDidChange = Notification.Name("timelineClipColorsDidChange")
 }
+#endif

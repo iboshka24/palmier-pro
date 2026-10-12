@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 private struct CaptureFrameInput: DecodableToolArgs {
@@ -77,3 +78,4 @@ extension ToolExecutor {
         return .ok(json)
     }
 }
+#endif

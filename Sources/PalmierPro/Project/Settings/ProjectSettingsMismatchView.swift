@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ProjectSettingsMismatchView: View {
@@ -83,3 +84,4 @@ struct ProjectSettingsMismatchView: View {
         mismatch.clipWidth != editor.timeline.width || mismatch.clipHeight != editor.timeline.height
     }
 }
+#endif

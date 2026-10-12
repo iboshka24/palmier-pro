@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 import Foundation
@@ -107,3 +108,4 @@ struct NestRenderTests {
 private let isRed = CompositorFixtures.isRed
 private let isWhite = CompositorFixtures.isWhite
 private let isBlack = CompositorFixtures.isBlack
+#endif

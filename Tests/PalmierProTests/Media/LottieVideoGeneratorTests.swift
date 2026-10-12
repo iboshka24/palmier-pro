@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import AppKit
 import Testing
@@ -114,3 +115,4 @@ struct LottieVideoGeneratorTests {
         #expect(frozen.top.redComponent > 0.7)
     }
 }
+#endif

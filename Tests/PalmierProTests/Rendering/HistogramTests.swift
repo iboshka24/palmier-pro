@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreGraphics
 import Testing
@@ -70,3 +71,4 @@ struct HistogramTests {
         #expect(sampledHue == nil)
     }
 }
+#endif

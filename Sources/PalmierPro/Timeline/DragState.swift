@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 enum DragState {
@@ -123,3 +124,4 @@ enum DragState {
         var value: TimelineMarker
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Accelerate
 import Foundation
 
@@ -57,3 +58,4 @@ enum VisualSearch {
         return Array(hits.prefix(limit).filter { $0.score >= floor })
     }
 }
+#endif

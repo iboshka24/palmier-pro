@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct SkillDetailSheet: View {
@@ -529,3 +530,4 @@ struct SkillDetailSheet: View {
         }
     }
 }
+#endif

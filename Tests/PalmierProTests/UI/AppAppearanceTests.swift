@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import Testing
@@ -129,3 +130,4 @@ struct AppAppearanceTests {
         return linear[0] * 0.2126 + linear[1] * 0.7152 + linear[2] * 0.0722
     }
 }
+#endif

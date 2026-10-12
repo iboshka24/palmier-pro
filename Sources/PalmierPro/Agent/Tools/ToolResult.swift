@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 
@@ -63,3 +64,4 @@ extension ToolResult.Block: Codable {
         }
     }
 }
+#endif

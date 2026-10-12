@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct MatteSheet: View {
@@ -80,3 +81,4 @@ struct MatteSheet: View {
         }
     }
 }
+#endif

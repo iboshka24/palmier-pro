@@ -1,3 +1,4 @@
+#if os(macOS)
 import CryptoKit
 import Foundation
 
@@ -150,3 +151,4 @@ actor TranscriptCache {
         }
     }
 }
+#endif

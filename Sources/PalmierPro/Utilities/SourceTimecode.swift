@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -236,3 +237,4 @@ enum SourceTimingReader {
         mp4Children(data, in: range).first { $0.type == type }?.body
     }
 }
+#endif

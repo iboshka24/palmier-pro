@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct VideoModelProviderGroup: Identifiable {
@@ -311,3 +312,4 @@ extension GenerationView {
     }
 
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 extension GenerationInput {
     @discardableResult
     mutating func setAudioSourceAsset(_ asset: MediaAsset) -> Bool {
@@ -14,3 +15,4 @@ extension GenerationInput {
         return true
     }
 }
+#endif

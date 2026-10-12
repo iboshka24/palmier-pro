@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TabStrip<Item: Identifiable, Tab: View, Trailing: View>: View where Item.ID == String {
@@ -107,3 +108,4 @@ private struct DocumentTabCloseAccess: ViewModifier {
         }
     }
 }
+#endif

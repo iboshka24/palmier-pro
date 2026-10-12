@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 
@@ -467,3 +468,4 @@ enum FrameRenderer {
         CGAffineTransform(a: 1, b: 0, c: 0, d: -1, tx: 0, ty: height)
     }
 }
+#endif

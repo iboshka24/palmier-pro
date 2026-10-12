@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 enum SettingsTab: String, CaseIterable, Identifiable {
@@ -272,3 +273,4 @@ final class SettingsWindowController: NSWindowController {
 #Preview {
     SettingsView()
 }
+#endif

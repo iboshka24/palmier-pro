@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import UniformTypeIdentifiers
 
@@ -141,3 +142,4 @@ enum SubtitleFileParser {
         return text.trimmingCharacters(in: .whitespaces)
     }
 }
+#endif

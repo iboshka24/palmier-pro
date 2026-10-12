@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct EditorActionFooter<Actions: View>: View {
@@ -45,3 +46,4 @@ struct EditorAgentMenu<MenuContent: View>: View {
         .accessibilityLabel(L10n.string("Agent Mode"))
     }
 }
+#endif

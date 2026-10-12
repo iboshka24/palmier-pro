@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -30,3 +31,4 @@ enum LUTTetraKernel {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -11,3 +12,4 @@ enum LevelsKernel {
         return kernel.apply(extent: image.extent, arguments: [image, Float(blacks), Float(whites)]) ?? image
     }
 }
+#endif

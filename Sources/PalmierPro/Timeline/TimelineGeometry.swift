@@ -1,4 +1,7 @@
+#if canImport(AppKit)
 import AppKit
+#endif
+import Foundation
 
 enum TrackDropTarget: Equatable, Hashable {
     case existingTrack(Int)
@@ -25,6 +28,7 @@ struct TimelineGeometry {
     private let cumulativeY: [CGFloat]
     private let blockBottoms: [CGFloat]
 
+#if os(macOS)
     @MainActor
     init(
         editor: EditorViewModel,
@@ -45,6 +49,7 @@ struct TimelineGeometry {
             bounds: bounds
         )
     }
+#endif
 
     init(
         pixelsPerFrame: Double,
@@ -207,6 +212,7 @@ struct TimelineGeometry {
         headerWidth + Double(frame) * pixelsPerFrame
     }
 
+#if os(macOS)
     /// Interior keyframe hit point: just pxPerFrame placement, no edge insetting.
     func audioVolumeKfPoint(clip: Clip, kfOffset: Int, kfDb: Double, in clipRect: NSRect) -> CGPoint {
         let body = ClipRenderer.clipBodyRect(in: clipRect)
@@ -233,4 +239,5 @@ struct TimelineGeometry {
         let half = ClipRenderer.volumeKeyframeHitSize / 2
         return NSRect(x: x - half, y: y - half, width: half * 2, height: half * 2)
     }
+#endif
 }

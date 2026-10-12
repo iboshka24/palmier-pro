@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -15,3 +16,4 @@ enum CIKernelLoader {
         data(lib).flatMap { try? CIColorKernel(functionName: function, fromMetalLibraryData: $0) }
     }
 }
+#endif

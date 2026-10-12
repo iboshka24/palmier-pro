@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -220,3 +221,4 @@ struct ToolbarView: View {
         .hoverTooltip(help)
     }
 }
+#endif

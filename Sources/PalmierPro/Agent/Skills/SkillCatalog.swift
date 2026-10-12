@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// One entry in the published catalog.json. `sha` is a content hash of the SKILL.md
@@ -76,3 +77,4 @@ final class SkillCatalog {
         return data
     }
 }
+#endif

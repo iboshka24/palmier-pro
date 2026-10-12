@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import AppKit
 import CoreVideo
@@ -225,3 +226,4 @@ enum ImageVideoGenerator {
         }
     }
 }
+#endif

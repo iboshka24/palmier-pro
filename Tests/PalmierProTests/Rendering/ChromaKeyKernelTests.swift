@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -49,3 +50,4 @@ struct ChromaKeyKernelTests {
         #expect(g(on) < g(off), "spill suppression reduces green cast")
     }
 }
+#endif

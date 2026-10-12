@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 enum Playhead {
@@ -94,3 +95,4 @@ final class PlayheadOverlay {
         }
     }
 }
+#endif

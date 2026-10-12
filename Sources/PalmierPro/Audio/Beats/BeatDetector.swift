@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreML
 import Foundation
@@ -262,3 +263,4 @@ final class BeatDetector: @unchecked Sendable {
         return median > 0 ? 60.0 / median : nil
     }
 }
+#endif

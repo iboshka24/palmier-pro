@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 #if BUNDLED_SPEECH
 import SpeechEnhancement
@@ -124,3 +125,4 @@ enum AudioEnhancer {
     }
     #endif
 }
+#endif

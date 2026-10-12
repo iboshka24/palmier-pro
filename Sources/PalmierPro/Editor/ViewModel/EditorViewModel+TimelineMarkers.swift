@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 struct TimelineMarkerChangeReceipt {
     var created: [TimelineMarker]
@@ -149,3 +150,4 @@ extension EditorViewModel {
         }
     }
 }
+#endif

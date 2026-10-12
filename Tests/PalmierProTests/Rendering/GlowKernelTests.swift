@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -56,3 +57,4 @@ struct GlowKernelTests {
         #expect(warm.0 - warm.2 > neutral.0 - neutral.2 + 0.03, "warm halation bleeds redder than blue")
     }
 }
+#endif

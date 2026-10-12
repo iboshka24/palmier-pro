@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -74,3 +75,4 @@ enum VideoTrimExtractor {
         return outputURL
     }
 }
+#endif

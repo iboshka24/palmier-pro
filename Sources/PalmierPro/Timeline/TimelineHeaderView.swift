@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 enum TimelineHeaderSymbol {
@@ -813,3 +814,4 @@ private final class TimelineHeaderRulerCoverView: NSView {
         bounds.fill()
     }
 }
+#endif

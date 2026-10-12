@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct TranscriptionToolContext {
@@ -626,3 +627,4 @@ extension ToolExecutor {
         return NSDecimalNumber(string: String(format: "%.2f", x))
     }
 }
+#endif

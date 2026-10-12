@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 import Metal
@@ -84,3 +85,4 @@ final class CustomVideoCompositor: NSObject, AVVideoCompositing, @unchecked Send
         request.finish(withComposedVideoFrame: output)
     }
 }
+#endif

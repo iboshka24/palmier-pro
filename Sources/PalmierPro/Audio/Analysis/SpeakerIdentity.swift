@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 #if BUNDLED_SPEECH
 import SpeechVAD
@@ -183,3 +184,4 @@ enum SpeakerIdentity {
         return norm > 0 ? v.map { $0 / norm } : v
     }
 }
+#endif

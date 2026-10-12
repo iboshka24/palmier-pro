@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TitleBarLeadingView: View {
@@ -106,3 +107,4 @@ private struct PanelVisibilityButton: View {
         .help(label)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 @MainActor
 final class TimelineInputController {
@@ -1567,3 +1568,4 @@ final class TimelineInputController {
         return 0
     }
 }
+#endif

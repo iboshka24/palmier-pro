@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -14,3 +15,4 @@ enum WheelsKernel {
                             arguments: [image, vec(c.lift), vec(c.gain), vec(c.invGamma)]) ?? image
     }
 }
+#endif

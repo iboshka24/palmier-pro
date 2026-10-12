@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -197,3 +198,4 @@ private struct OnboardingDetail: View {
             .fixedSize(horizontal: false, vertical: true)
     }
 }
+#endif

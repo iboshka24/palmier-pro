@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ClipGeneratingOverlay: View {
@@ -10,3 +11,4 @@ struct ClipGeneratingOverlay: View {
         .allowsHitTesting(false)
     }
 }
+#endif

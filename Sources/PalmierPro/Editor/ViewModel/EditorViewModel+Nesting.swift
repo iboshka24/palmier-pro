@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Nested timelines: eligibility, carrier insertion, and decompose.
@@ -221,3 +222,4 @@ extension EditorViewModel {
         return carrierIds
     }
 }
+#endif

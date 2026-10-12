@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -63,3 +64,4 @@ struct AudioMeterTests {
         #expect(AudioMeterSegmentLayout(height: .nan).count == 0)
     }
 }
+#endif

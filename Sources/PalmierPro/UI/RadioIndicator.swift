@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct RadioIndicator: View {
@@ -19,3 +20,4 @@ struct RadioIndicator: View {
         .frame(width: size, height: size)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -261,3 +262,4 @@ private extension AgentProvider {
         }
     }
 }
+#endif

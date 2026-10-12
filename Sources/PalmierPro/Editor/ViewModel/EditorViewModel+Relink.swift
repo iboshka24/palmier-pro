@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // Reconnect offline media by repointing assets at a relocated source file or folder.
@@ -59,3 +60,4 @@ extension EditorViewModel {
         return map
     }
 }
+#endif

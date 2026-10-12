@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -259,3 +260,4 @@ struct AgentActivityHighlightTests {
         #expect(editor.agentActivity.isEmpty)
     }
 }
+#endif

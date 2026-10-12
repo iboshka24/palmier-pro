@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Testing
 @testable import PalmierPro
@@ -293,3 +294,4 @@ struct TimelineKeyframeLaneTests {
         #expect(hit?.frame == 15)
     }
 }
+#endif

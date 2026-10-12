@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import CoreText
 import Foundation
@@ -110,3 +111,4 @@ enum InspectFrameOverlay: Sendable {
         ctx.fill(CGRect(x: x, y: y, width: width, height: height))
     }
 }
+#endif

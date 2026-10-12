@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 enum MentionTab: CaseIterable, Hashable {
@@ -164,3 +165,4 @@ struct MentionPopover: View {
         .background(isHighlighted ? AppTheme.Accent.primary.opacity(0.15) : .clear)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct HoverHighlight: ViewModifier {
@@ -54,3 +55,4 @@ extension View {
             )
     }
 }
+#endif

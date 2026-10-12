@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct KeyframePropertyValueFields: View {
@@ -417,3 +418,4 @@ enum RotationSnap {
         return rotation.truncatingRemainder(dividingBy: intervalDegrees) == 0
     }
 }
+#endif

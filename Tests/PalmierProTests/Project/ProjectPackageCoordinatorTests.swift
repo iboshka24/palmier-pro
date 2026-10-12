@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Testing
 @testable import PalmierPro
@@ -139,3 +140,4 @@ struct ProjectPackageCoordinatorTests {
         #expect(saved.manifest?.entries.first?.source == .project(relativePath: "media/rendered.mp4"))
     }
 }
+#endif

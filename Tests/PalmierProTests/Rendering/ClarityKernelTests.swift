@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -66,3 +67,4 @@ struct ClarityKernelTests {
         #expect(edgeDelta < -0.02, "dark side of edge gets darker, delta \(edgeDelta)")
     }
 }
+#endif

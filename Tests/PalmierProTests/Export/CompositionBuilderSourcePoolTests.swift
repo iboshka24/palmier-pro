@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 import os
@@ -204,3 +205,4 @@ struct CompositionBuilderSourcePoolTests {
         return pixelBuffer
     }
 }
+#endif

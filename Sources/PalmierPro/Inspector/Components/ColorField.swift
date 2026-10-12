@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -75,3 +76,4 @@ private final class ColorPanelBridge {
         onChange?(Color(.sRGB, red: r, green: g, blue: b, opacity: a))
     }
 }
+#endif

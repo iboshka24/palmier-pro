@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Testing
@@ -130,3 +131,4 @@ struct MCPTextScaleTests {
         throw CocoaError(.coderReadCorrupt)
     }
 }
+#endif

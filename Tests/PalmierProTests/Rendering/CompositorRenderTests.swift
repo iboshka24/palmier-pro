@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 import Foundation
@@ -337,3 +338,4 @@ extension CompositorRenderTests {
 extension CompositorRenderTests {
     static func timelineWith(_ tracks: Track...) -> Timeline { CompositorFixtures.timeline(tracks) }
 }
+#endif

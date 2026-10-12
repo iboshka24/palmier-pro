@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import AVFoundation
 import CryptoKit
@@ -350,3 +351,4 @@ final class MediaVisualCache {
         }
     }
 }
+#endif

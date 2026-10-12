@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Writes a self-contained `.palmier` package: every resolvable media reference is copied
@@ -163,3 +164,4 @@ enum PalmierProjectExporter {
         Int64((try? url.resourceValues(forKeys: [.fileSizeKey]).fileSize) ?? 0)
     }
 }
+#endif

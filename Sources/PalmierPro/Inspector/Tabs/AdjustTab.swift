@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 import UniformTypeIdentifiers
@@ -712,3 +713,4 @@ extension InspectorView {
         }
     }
 }
+#endif

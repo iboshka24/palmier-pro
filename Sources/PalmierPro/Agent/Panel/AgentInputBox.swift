@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 import UniformTypeIdentifiers
@@ -289,3 +290,4 @@ struct AgentInputBox<LeadingTools: View>: View {
         if let text = pb.string(forType: .string) { draft += text }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension EditorViewModel {
@@ -193,3 +194,4 @@ extension EditorViewModel {
     }
 
 }
+#endif

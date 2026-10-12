@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 import VideoToolbox
@@ -289,3 +290,4 @@ enum HDRVideoExporter {
         }
     }
 }
+#endif

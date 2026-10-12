@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Testing
 @testable import PalmierPro
@@ -100,3 +101,4 @@ import Testing
         #expect(!didResolve)
     }
 }
+#endif

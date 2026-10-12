@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -90,3 +91,4 @@ struct CommunitySkillAutoInstallTests {
         #expect(SkillStore.decodeLedger(Data("not json".utf8)) == nil)
     }
 }
+#endif

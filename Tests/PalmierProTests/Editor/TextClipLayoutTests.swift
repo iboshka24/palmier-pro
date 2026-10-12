@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -30,3 +31,4 @@ struct TextClipLayoutTests {
         #expect(clip.transform.flipVertical)
     }
 }
+#endif

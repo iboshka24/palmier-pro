@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct SkillsPane: View {
@@ -329,3 +330,4 @@ struct SkillsPane: View {
         presentedSkill = .existing(id: id)
     }
 }
+#endif

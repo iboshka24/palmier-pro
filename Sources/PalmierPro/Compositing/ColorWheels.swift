@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -72,3 +73,4 @@ enum ColorWheels {
                 SIMD3(ig(gamma.0), ig(gamma.1), ig(gamma.2)))
     }
 }
+#endif

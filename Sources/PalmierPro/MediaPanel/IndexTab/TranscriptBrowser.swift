@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TranscriptBrowser: View {
@@ -400,3 +401,4 @@ enum TranscriptBrowserNavigation {
         }
     }
 }
+#endif

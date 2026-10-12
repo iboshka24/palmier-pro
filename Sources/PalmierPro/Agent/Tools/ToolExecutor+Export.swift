@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension ToolExecutor {
@@ -415,3 +416,4 @@ private extension String {
             .replacingOccurrences(of: "_", with: "")
     }
 }
+#endif

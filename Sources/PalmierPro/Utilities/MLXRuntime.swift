@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import os
 
@@ -64,3 +65,4 @@ final class MLXOperationGate: @unchecked Sendable {
         }
     }
 }
+#endif

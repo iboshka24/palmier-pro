@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct CropOverlayView: View {
@@ -266,3 +267,4 @@ struct CropOverlayView: View {
         case topLeft, topRight, bottomLeft, bottomRight
     }
 }
+#endif

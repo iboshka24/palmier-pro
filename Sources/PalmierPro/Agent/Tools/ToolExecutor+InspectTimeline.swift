@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreGraphics
 import Foundation
@@ -110,3 +111,4 @@ extension ToolExecutor {
         return CGSize(width: (size.width * scale).rounded(), height: (size.height * scale).rounded())
     }
 }
+#endif

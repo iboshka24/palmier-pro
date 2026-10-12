@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -142,3 +143,4 @@ struct SlipTests {
         #expect(e.timeline.tracks[0].clips[0].trimStartFrame == 30)
     }
 }
+#endif

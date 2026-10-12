@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -90,7 +91,7 @@ struct EffectDescriptor: Identifiable, Sendable {
     }
 }
 
-enum EffectRegistry {
+extension EffectRegistry {
 
     static let all: [EffectDescriptor] = color + wheels + hueCurves + lut + curves + detail + blur + stylize + key
 
@@ -377,16 +378,6 @@ enum EffectRegistry {
     static func descriptor(id: String) -> EffectDescriptor? { byId[id] }
 
     /// Canonical order the always-on adjustment sections insert their effects in.
-    static let canonicalOrder: [String] = [
-        "color.exposure", "color.contrast", "color.highlightsShadows", "color.blacksWhites",
-        "color.temperature", "color.vibrance", "color.saturation", "color.wheels", "color.curves",
-        "color.hueCurves", "color.lut", "detail.clarity", "key.chroma", "blur.gaussian", "blur.sharpen",
-        "blur.noiseReduction", "blur.motion", "stylize.invert", "stylize.grain", "stylize.vignette",
-        "stylize.glow",
-    ]
 
-    static func insertIndex(_ effects: [Effect], for id: String) -> Int {
-        let rank = canonicalOrder.firstIndex(of: id) ?? Int.max
-        return effects.firstIndex { (canonicalOrder.firstIndex(of: $0.type) ?? Int.max) > rank } ?? effects.count
-    }
 }
+#endif

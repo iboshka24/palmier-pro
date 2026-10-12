@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ModelsPane: View {
@@ -134,3 +135,4 @@ struct ModelsPane: View {
         .padding(.vertical, AppTheme.Spacing.smMd)
     }
 }
+#endif

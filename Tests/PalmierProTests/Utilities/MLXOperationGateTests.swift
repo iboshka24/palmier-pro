@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -11,3 +12,4 @@ import Testing
     await drained
     #expect(gate.stop())
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -69,3 +70,4 @@ struct ShortIdTests {
         #expect(ToolExecutor.shortIdMap([id, uuid("EEEE9999")])[id] == "ABCD1234")
     }
 }
+#endif

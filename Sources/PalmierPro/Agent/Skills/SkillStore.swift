@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import AppKit
 import CryptoKit
@@ -569,3 +570,4 @@ final class SkillStore {
         try updated.write(to: skill.path, atomically: true, encoding: .utf8)
     }
 }
+#endif

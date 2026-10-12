@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import Combine
@@ -470,3 +471,4 @@ extension AccountService {
         availablePlans.first { $0.tier == tier }
     }
 }
+#endif

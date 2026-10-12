@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 import Testing
@@ -443,3 +444,4 @@ struct CompositorTextLayerTests {
     }
 
 }
+#endif

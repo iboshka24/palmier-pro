@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -183,3 +184,4 @@ enum FrameCaptureRenderer {
         )
     }
 }
+#endif

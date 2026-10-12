@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreFoundation
 import Foundation
 
@@ -590,3 +591,4 @@ extension Dictionary where Key == String, Value == Any {
         return v
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import AVFoundation
 
@@ -307,3 +308,4 @@ extension EditorViewModel {
         try await session.export(to: destURL, as: outType)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -26,3 +27,4 @@ struct ScrubbableNumberFieldTests {
         #expect(value == 1)
     }
 }
+#endif

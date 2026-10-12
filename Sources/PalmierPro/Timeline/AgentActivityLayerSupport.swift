@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 enum AgentActivityLayerSupport {
@@ -50,3 +51,4 @@ enum AgentActivityLayerSupport {
         layer.add(animation, forKey: "agentActivityFade")
     }
 }
+#endif

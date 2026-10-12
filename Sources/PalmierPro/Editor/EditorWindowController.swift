@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Window controller that handles keyboard shortcuts via the responder chain.
@@ -402,3 +403,4 @@ extension EditorWindowController: EditorActions {
         }
     }
 }
+#endif

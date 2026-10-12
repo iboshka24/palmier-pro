@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension ToolExecutor {
@@ -205,3 +206,4 @@ extension ToolExecutor {
         return .ok(Self.jsonString(payload) ?? "{}")
     }
 }
+#endif

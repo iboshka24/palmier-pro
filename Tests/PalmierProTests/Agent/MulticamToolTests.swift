@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -186,3 +187,4 @@ struct MulticamToolTests {
         #expect(mute.isError == false)
     }
 }
+#endif

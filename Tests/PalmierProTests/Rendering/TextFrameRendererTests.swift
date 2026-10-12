@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import CoreText
 import Foundation
@@ -512,3 +513,4 @@ struct TextFrameRendererTests {
         #expect(CTFrameGetVisibleStringRange(frame).length < (content as NSString).length)
     }
 }
+#endif

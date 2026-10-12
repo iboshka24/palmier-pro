@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -226,3 +227,4 @@ struct ReframeSeedTests {
 
     private enum DecodeError: Error { case wrongKind }
 }
+#endif

@@ -1,7 +1,10 @@
 import Foundation
 import Observation
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
 
+#if os(macOS)
 @MainActor @Observable
 final class AppLocalization {
     static let shared = AppLocalization()
@@ -125,12 +128,15 @@ final class AppLocalization {
         return bundle
     }
 }
+#endif
 
+#if os(macOS)
 extension View {
     func appLocalization() -> some View {
         environment(\.locale, AppLocalization.shared.activeLocale)
     }
 }
+#endif
 
 @MainActor
 enum L10n {
@@ -138,12 +144,16 @@ enum L10n {
         value.description
     }
 
+#if os(macOS)
     static func string(_ keyAndValue: String.LocalizationValue) -> String {
         AppLocalization.shared.string(keyAndValue)
     }
+#endif
 
+#if os(macOS)
     static func string(key: String) -> String {
         AppLocalization.shared.string(key: key)
     }
+#endif
 
 }

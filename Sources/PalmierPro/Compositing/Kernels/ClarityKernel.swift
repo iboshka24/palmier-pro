@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -16,3 +17,4 @@ enum ClarityKernel {
                             arguments: [image, blurred, Float(clarity), Float(dehaze)]) ?? image
     }
 }
+#endif

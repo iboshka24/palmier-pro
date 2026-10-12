@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Clip-level mutations: move, split, remove, speed, property edits, overwrite-style
@@ -805,3 +806,4 @@ extension EditorViewModel {
     }
 
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 import AVFoundation
 
@@ -107,3 +108,4 @@ final class PreviewNSView: NSView {
         }
     }
 }
+#endif

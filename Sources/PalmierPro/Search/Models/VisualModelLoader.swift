@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 @MainActor
@@ -119,3 +120,4 @@ final class VisualModelLoader: VisualSearchModelLoading {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct UpdateSidebarCard: View {
@@ -71,3 +72,4 @@ struct UpdateProjectBadge: View {
         return L10n.string("Install update")
     }
 }
+#endif

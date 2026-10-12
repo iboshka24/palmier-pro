@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ShortcutsPane: View {
@@ -124,3 +125,4 @@ struct ShortcutGroup {
         .frame(width: AppTheme.Settings.contentMaxWidth, height: AppTheme.Settings.skillDetailMinHeight)
         .background(AppTheme.Background.surfaceColor)
 }
+#endif

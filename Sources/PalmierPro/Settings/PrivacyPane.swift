@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct PrivacyPane: View {
@@ -44,3 +45,4 @@ struct PrivacyPane: View {
         }
     }
 }
+#endif

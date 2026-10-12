@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -56,3 +57,4 @@ enum HueCurveKernel {
         }
     }
 }
+#endif

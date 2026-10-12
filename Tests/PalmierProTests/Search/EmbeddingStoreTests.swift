@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -42,3 +43,4 @@ struct EmbeddingStoreTests {
         #expect(throws: (any Error).self) { try EmbeddingStore.load(key: key) }
     }
 }
+#endif

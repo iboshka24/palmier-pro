@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct CustomAspectRatioContext: Identifiable {
@@ -126,3 +127,4 @@ struct CustomAspectRatioSheet: View {
         return horizontalText != initial.horizontal || verticalText != initial.vertical
     }
 }
+#endif

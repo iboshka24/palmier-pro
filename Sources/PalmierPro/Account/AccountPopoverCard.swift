@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// Compact account summary shown when the user clicks the IdentityStrip avatar.
@@ -247,3 +248,4 @@ struct AccountPopoverCard: View {
         )
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -134,3 +135,4 @@ struct ExportQueueTests {
 private extension ExportQueue {
     func job(_ id: UUID) -> ExportJob? { jobs.first { $0.id == id } }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Dashed yellow snap-line CAShapeLayer. Two X sources (local drag, external drop) —
@@ -54,3 +55,4 @@ final class SnapIndicatorOverlay {
         CATransaction.commit()
     }
 }
+#endif

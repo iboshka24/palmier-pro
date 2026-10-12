@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -201,3 +202,4 @@ struct CaptionBuilderTests {
         #expect(specs.isEmpty)
     }
 }
+#endif

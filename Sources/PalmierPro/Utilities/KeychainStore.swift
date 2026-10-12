@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Security
 
@@ -50,3 +51,4 @@ enum KeychainStore {
         SecItemDelete(query as CFDictionary)
     }
 }
+#endif

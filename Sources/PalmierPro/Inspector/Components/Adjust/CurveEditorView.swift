@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct CurveEditorView: View {
@@ -210,3 +211,4 @@ struct CurveEditorView: View {
         (commit ? onCommit : onChange)(channel, value)
     }
 }
+#endif

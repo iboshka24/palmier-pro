@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Accelerate
 import CoreVideo
@@ -156,3 +157,4 @@ enum AlphaVideoNormalizer {
         }
     }
 }
+#endif

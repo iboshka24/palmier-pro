@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Track-level mutations: add/remove, visibility toggles, height, sync-lock.
@@ -166,3 +167,4 @@ extension EditorViewModel {
         }
     }
 }
+#endif

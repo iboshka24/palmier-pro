@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -23,3 +24,4 @@ struct TranscriptSearchTests {
         #expect(TranscriptSearch.matches("she was running fast", terms: ["run"]))
     }
 }
+#endif

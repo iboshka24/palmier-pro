@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Sparkle
 
@@ -106,3 +107,4 @@ extension Updater: SPUUpdaterDelegate {
         clearUpdateAvailability()
     }
 }
+#endif

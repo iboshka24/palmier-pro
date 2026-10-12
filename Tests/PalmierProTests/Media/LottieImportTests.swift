@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Testing
 @testable import PalmierPro
@@ -41,3 +42,4 @@ struct LottieImportTests {
         #expect(asset.thumbnail != nil)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -69,3 +70,4 @@ struct TextContentField: NSViewRepresentable {
         }
     }
 }
+#endif

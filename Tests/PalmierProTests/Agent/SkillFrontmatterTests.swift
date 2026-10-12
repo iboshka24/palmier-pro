@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -57,3 +58,4 @@ struct SkillFrontmatterTests {
         #expect(skill.displayPath == "~/.palmier/skills/captions")
     }
 }
+#endif

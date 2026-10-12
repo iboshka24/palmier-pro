@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -21,3 +22,4 @@ struct ProjectActivityTests {
         #expect(entries.first?.createdDate == Date(timeIntervalSince1970: 1_700_000_000))
     }
 }
+#endif

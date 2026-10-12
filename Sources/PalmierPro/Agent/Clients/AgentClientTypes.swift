@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension Notification.Name {
@@ -341,3 +342,4 @@ extension AgentProvider {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Testing
 @testable import PalmierPro
@@ -595,3 +596,4 @@ struct CompositionBuilderAdversarialTests {
         #expect(result.a.isInfinite || result.a.isNaN)
     }
 }
+#endif

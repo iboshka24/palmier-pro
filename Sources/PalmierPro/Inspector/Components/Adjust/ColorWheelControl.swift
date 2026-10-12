@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ColorWheelControl: View {
@@ -30,3 +31,4 @@ struct ColorWheelControl: View {
         }
     }
 }
+#endif

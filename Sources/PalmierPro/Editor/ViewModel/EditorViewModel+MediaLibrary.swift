@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import AVFoundation
 
@@ -831,3 +832,4 @@ extension EditorViewModel {
         return clipId
     }
 }
+#endif

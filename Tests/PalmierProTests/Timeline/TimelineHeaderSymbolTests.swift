@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Testing
 @testable import PalmierPro
@@ -52,3 +53,4 @@ struct TimelineHeaderSymbolTests {
         #expect(bytes.contains { $0 != 0 })
     }
 }
+#endif

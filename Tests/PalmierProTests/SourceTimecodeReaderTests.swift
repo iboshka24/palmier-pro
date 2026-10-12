@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -178,3 +179,4 @@ struct SourceTimecodeReaderTests {
         #expect(tc.string == "01;00;00;00")   // DF display catches back up to wall clock
     }
 }
+#endif

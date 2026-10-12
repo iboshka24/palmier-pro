@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import Testing
@@ -163,3 +164,4 @@ struct VideoProjectWriteUnblockTests {
         #expect(saved.projectFile.timelines.first?.name == "Second save")
     }
 }
+#endif

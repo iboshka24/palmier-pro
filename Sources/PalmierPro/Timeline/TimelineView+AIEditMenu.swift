@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Same as AIEditMenu, but NSMenu-based.
@@ -175,3 +176,4 @@ extension TimelineView {
         editor.beginAICreateVideo(clipId: clipId, asReference: asReference)
     }
 }
+#endif

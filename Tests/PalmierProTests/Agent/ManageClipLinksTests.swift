@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -82,3 +83,4 @@ struct ManageClipLinksTests {
         #expect(h.editor.timeline.tracks.flatMap(\.clips).allSatisfy { $0.linkGroupId == nil })
     }
 }
+#endif

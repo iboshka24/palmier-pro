@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -21,3 +22,4 @@ struct CostEstimatorLocalizationTests {
         #expect(CostEstimator.localizedUsedCredits(2) == "2 credits used")
     }
 }
+#endif

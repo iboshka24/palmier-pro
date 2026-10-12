@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -14,3 +15,4 @@ struct TimelineZoomTests {
         #expect(editor.minZoomScale == 2)
     }
 }
+#endif

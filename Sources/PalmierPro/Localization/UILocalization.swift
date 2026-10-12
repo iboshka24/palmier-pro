@@ -1,3 +1,4 @@
+#if os(macOS)
 extension ClipType {
     @MainActor
     var localizedTrackLabel: String {
@@ -36,3 +37,4 @@ extension CropAspectLock {
         }
     }
 }
+#endif

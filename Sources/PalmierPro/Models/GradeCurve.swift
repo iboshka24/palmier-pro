@@ -1,4 +1,3 @@
-import CoreImage
 import Foundation
 
 struct CurvePoint: Codable, Sendable, Equatable {
@@ -45,4 +44,3 @@ extension GradeCurve {
         self = decoded
     }
 }
-

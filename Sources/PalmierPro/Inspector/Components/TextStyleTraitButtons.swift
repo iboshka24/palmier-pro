@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TextStyleTraitButtons: View {
@@ -74,3 +75,4 @@ struct TextStyleTraitButtons: View {
         .accessibilityLabel(L10n.string(key: label))
     }
 }
+#endif

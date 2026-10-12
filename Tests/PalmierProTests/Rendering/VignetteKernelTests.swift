@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -52,3 +53,4 @@ struct VignetteKernelTests {
         #expect(far > near, "higher midpoint = less corner darkening (\(far) vs \(near))")
     }
 }
+#endif

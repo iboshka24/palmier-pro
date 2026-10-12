@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -719,3 +720,4 @@ struct ExportView: View {
         }
     }
 }
+#endif

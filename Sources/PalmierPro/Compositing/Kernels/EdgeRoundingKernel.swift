@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -18,3 +19,4 @@ enum EdgeRoundingKernel {
         ) ?? image
     }
 }
+#endif

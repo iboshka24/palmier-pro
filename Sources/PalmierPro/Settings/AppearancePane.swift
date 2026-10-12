@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct AppearancePane: View {
@@ -362,3 +363,4 @@ private struct AppearancePreviewPalette {
         divider: Color.white.opacity(0.10)
     )
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ProjectCard: View {
@@ -152,3 +153,4 @@ struct ProjectCard: View {
         thumbnail = NSImage(cgImage: image, size: NSSize(width: image.width, height: image.height))
     }
 }
+#endif

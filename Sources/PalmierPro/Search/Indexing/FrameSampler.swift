@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreGraphics
 import Foundation
@@ -115,3 +116,4 @@ enum LumaGrid {
         return diff / Float(a.count)
     }
 }
+#endif

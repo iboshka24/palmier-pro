@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 #if BUNDLED_SPEECH
 import SpeechVAD
@@ -161,3 +162,4 @@ enum VoiceActivity {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct EditorPanelGroup<Content: View, HeaderAccessory: View>: View {
@@ -128,3 +129,4 @@ extension EditorPanelGroup where HeaderAccessory == EmptyView {
         )
     }
 }
+#endif

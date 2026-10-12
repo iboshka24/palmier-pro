@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -103,3 +104,4 @@ struct ScrubAudioPendingStateTests {
         #expect(state.drainGeneration == nil)
     }
 }
+#endif

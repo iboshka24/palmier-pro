@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct BYOKClient: AgentClient {
@@ -60,3 +61,4 @@ struct BYOKClient: AgentClient {
         }
     }
 }
+#endif

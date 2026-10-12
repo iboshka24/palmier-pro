@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 
@@ -171,3 +172,4 @@ final class SampleProjectService {
         return cleaned.isEmpty ? "Sample" : cleaned
     }
 }
+#endif

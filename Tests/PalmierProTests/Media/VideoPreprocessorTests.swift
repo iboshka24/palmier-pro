@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Testing
 @testable import PalmierPro
@@ -54,3 +55,4 @@ func requiredH264MP4KeepsCompatibleSource() async throws {
     )
     #expect(outputURL == nil)
 }
+#endif

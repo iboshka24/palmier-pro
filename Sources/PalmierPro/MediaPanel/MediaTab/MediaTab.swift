@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -831,3 +832,4 @@ struct MarqueeSelection {
         baseTimelines = []
     }
 }
+#endif

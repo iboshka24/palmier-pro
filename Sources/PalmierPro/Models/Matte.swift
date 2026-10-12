@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import SwiftUI
@@ -74,3 +75,4 @@ extension Color {
         return String(format: "#%02X%02X%02X", Int(c.redComponent * 255), Int(c.greenComponent * 255), Int(c.blueComponent * 255))
     }
 }
+#endif

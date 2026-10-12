@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct SampleProjectsStrip: View {
@@ -174,3 +175,4 @@ private struct SampleCard: View {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -174,3 +175,4 @@ struct EditorUndoTests {
         #expect(manager.canUndo == false)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct AccountPane: View {
@@ -255,3 +256,4 @@ struct AccountPane: View {
         .padding(.top, AppTheme.Spacing.xs)
     }
 }
+#endif

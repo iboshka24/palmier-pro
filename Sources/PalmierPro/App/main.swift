@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 Log.bootstrap()
@@ -17,3 +18,13 @@ let delegate = AppDelegate.shared
 app.delegate = delegate
 app.mainMenu = MainMenuBuilder.buildMenu()
 app.run()
+#else
+import Foundation
+
+FileHandle.standardError.write(Data("""
+Palmier Pro core: Linux/Windows build.
+The editor UI, media pipeline, and MCP server are macOS-only in this phase.
+See docs/Porting.md.
+
+""".utf8))
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension ToolExecutor {
@@ -380,3 +381,4 @@ fileprivate final class ImportDownloadDelegate: NSObject, URLSessionDownloadDele
         // No-op: the async download(for:delegate:) API copies the temp file for us.
     }
 }
+#endif

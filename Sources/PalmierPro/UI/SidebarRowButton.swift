@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct SidebarRowButton: View {
@@ -25,3 +26,4 @@ struct SidebarRowButton: View {
         .buttonStyle(.plain)
     }
 }
+#endif

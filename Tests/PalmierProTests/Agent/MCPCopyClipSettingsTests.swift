@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Testing
@@ -131,3 +132,4 @@ struct MCPCopyClipSettingsTests {
         throw CocoaError(.coderReadCorrupt)
     }
 }
+#endif

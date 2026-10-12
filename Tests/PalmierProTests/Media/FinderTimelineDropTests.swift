@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import Testing
@@ -87,3 +88,4 @@ struct FinderTimelineDropTests {
         #expect(placeholders[0].type == .video)
     }
 }
+#endif

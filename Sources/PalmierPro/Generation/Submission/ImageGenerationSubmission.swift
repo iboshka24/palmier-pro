@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 struct ImageGenerationSubmission {
@@ -64,3 +65,4 @@ struct ImageGenerationSubmission {
         )
     }
 }
+#endif

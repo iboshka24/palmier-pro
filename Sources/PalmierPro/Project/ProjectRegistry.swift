@@ -1,4 +1,5 @@
 import Foundation
+import Observation
 
 struct ProjectEntry: Codable, Identifiable, Sendable {
     let id: UUID
@@ -153,7 +154,11 @@ private actor ProjectRegistryDisk {
     func trashIfPresent(_ url: URL) -> Bool {
         guard FileManager.default.fileExists(atPath: url.path) else { return true }
         do {
+            #if os(macOS)
             try FileManager.default.trashItem(at: url, resultingItemURL: nil)
+            #else
+            try FileManager.default.removeItem(at: url)
+            #endif
             return true
         } catch {
             return false

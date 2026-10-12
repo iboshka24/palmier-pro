@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -72,3 +73,4 @@ import Testing
         #expect(!asset.wasGenerationRefunded)
     }
 }
+#endif

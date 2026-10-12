@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -97,3 +98,4 @@ struct TimelineMarkerRippleTests {
         #expect(e.timeline.markers[0].startFrame == 70)
     }
 }
+#endif

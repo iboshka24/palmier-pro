@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 import AVFoundation
@@ -740,3 +741,4 @@ extension NSWindow {
 private class CornerAdaptiveView: NSView {
     override class var requiresConstraintBasedLayout: Bool { true }
 }
+#endif

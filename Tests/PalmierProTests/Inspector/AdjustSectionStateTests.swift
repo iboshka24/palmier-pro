@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -22,3 +23,4 @@ import Testing
         #expect(state([Effect(type: "key.chroma", enabled: false)], sampling: true).isEnabled)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TimelineTileView: View {
@@ -88,3 +89,4 @@ struct TimelineTileView: View {
         }
     }
 }
+#endif

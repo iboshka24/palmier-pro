@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 import Testing
@@ -135,3 +136,4 @@ struct ExportServiceRoundTripTests {
         #expect(try Data(contentsOf: outURL) == existing)
     }
 }
+#endif

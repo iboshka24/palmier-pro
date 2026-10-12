@@ -1,3 +1,4 @@
+#if os(macOS)
 private struct AgentLocatedClip: Equatable {
     let trackId: String
     let clip: Clip
@@ -147,3 +148,4 @@ extension ToolExecutor {
         return lower..<upper
     }
 }
+#endif

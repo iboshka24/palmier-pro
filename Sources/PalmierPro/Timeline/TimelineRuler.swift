@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 enum TimelineRuler {
@@ -95,3 +96,4 @@ enum TimelineRuler {
         return 0
     }
 }
+#endif

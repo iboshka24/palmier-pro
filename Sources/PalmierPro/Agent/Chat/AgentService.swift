@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Observation
 
@@ -824,3 +825,4 @@ enum AgentContentBlock: Codable, Sendable {
         }
     }
 }
+#endif

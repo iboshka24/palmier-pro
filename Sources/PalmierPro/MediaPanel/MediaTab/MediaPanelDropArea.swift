@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -55,3 +56,4 @@ final class DropHostingView<Content: View>: NSHostingView<Content> {
         return true
     }
 }
+#endif

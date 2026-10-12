@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Testing
 @testable import PalmierPro
@@ -43,3 +44,4 @@ import Testing
         #expect(abs(size.width - expectedWidth) < 0.000_001)
     }
 }
+#endif

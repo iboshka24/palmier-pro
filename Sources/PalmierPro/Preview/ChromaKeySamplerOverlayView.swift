@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -41,3 +42,4 @@ struct ChromaKeySamplerOverlayView: View {
         }
     }
 }
+#endif

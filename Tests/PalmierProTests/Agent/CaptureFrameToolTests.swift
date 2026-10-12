@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreImage
 import Foundation
@@ -325,3 +326,4 @@ struct CaptureFrameToolTests {
         return (rgba[0], rgba[2])
     }
 }
+#endif

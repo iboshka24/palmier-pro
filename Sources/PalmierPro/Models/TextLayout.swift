@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import CoreText
 
@@ -96,3 +97,4 @@ enum TextLayout {
         CTFramesetterCreateWithAttributedString(attributedString as CFAttributedString)
     }
 }
+#endif

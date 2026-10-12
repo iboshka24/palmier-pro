@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -58,3 +59,4 @@ struct VisualSearchTests {
         #expect(VisualSearch.search(query: [1, 0, 0], indexes: [("a", strong)], minScore: 0.05).count == 1)
     }
 }
+#endif

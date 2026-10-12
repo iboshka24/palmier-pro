@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 
 enum SourceMediaTimebase {
@@ -23,3 +24,4 @@ enum SourceMediaTimebase {
         return secondsToFrame(seconds: max(0, seconds), fps: fps)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import CoreML
 import Foundation
@@ -78,3 +79,4 @@ struct VisualEmbedderParityTests {
         }
     }
 }
+#endif

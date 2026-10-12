@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 enum MediaPanelSection: String, CaseIterable {
@@ -95,3 +96,4 @@ struct MediaPanelView: View {
         }
     }
 }
+#endif

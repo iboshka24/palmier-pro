@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 struct RippleRangesReport: Sendable {
@@ -653,3 +654,4 @@ extension EditorViewModel {
         return nil
     }
 }
+#endif

@@ -1,3 +1,9 @@
+> [!NOTE]
+> Linux/Windows fork: the portable core builds on Linux and Windows.
+> See [docs/Porting.md](docs/Porting.md) and the
+> [fork releases](https://github.com/iboshka24/palmier-pro/releases).
+> Fork binaries are built from GPLv3 source and distributed under GPLv3.
+
 > [!IMPORTANT]
 > Palmier Pro releases through v0.7.6, and source code through [`last-gpl-source`](https://github.com/palmier-io/palmier-pro/tree/last-gpl-source), were published under GPLv3. Later binary releases are proprietary, and their corresponding source is not published. This repository preserves the historical source and hosts current binary releases and update metadata.
 

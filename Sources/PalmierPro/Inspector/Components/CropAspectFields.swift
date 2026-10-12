@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -89,3 +90,4 @@ struct CropAspectFields: View {
 
     private enum Field: Hashable { case horizontal, vertical }
 }
+#endif

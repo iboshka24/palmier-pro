@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct SkillExternalAgentMenu: View {
@@ -46,3 +47,4 @@ struct SkillExternalAgentMenu: View {
         }
     }
 }
+#endif

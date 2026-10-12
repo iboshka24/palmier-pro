@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -78,3 +79,4 @@ enum TimelineRenderer {
 
     private static func even(_ value: Double) -> Int { max(2, (Int(value.rounded()) / 2) * 2) }
 }
+#endif

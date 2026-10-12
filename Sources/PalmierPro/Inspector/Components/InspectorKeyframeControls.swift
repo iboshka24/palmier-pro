@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct InspectorKeyframePropertyControl: View {
@@ -62,3 +63,4 @@ struct InspectorKeyframeControls: View {
         )
     }
 }
+#endif

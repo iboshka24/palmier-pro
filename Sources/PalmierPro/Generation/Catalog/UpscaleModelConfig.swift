@@ -1,10 +1,6 @@
+#if os(macOS)
 import Foundation
 
-struct UpscaleSettings: Codable, Sendable, Equatable {
-    var selections: [String: String] = [:]
-    var numbers: [String: Double] = [:]
-    var toggles: [String: Bool] = [:]
-}
 
 struct UpscaleGenerationParams: Encodable, Sendable {
     let sourceURL: String
@@ -160,3 +156,4 @@ struct UpscaleModelConfig: Identifiable, Sendable {
         value == "1080p" ? 1920 : 3840
     }
 }
+#endif

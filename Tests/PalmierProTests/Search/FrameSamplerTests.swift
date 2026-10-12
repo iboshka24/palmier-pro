@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -44,3 +45,4 @@ struct FrameSamplerTests {
         #expect(frames.first?.isNewShot == true)
     }
 }
+#endif

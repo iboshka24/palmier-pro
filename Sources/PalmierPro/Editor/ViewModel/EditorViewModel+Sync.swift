@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension EditorViewModel {
@@ -402,3 +403,4 @@ extension EditorViewModel {
         return try? await AudioEnvelopeExtractor.extract(from: url, range: start...max(start + AudioEnvelopeExtractor.hopSeconds, end))
     }
 }
+#endif

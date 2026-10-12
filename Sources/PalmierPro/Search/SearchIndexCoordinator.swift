@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Per-project indexing queue and search
@@ -327,3 +328,4 @@ final class SearchIndexCoordinator {
 private extension Duration {
     var seconds: Double { Double(components.seconds) + Double(components.attoseconds) / 1e18 }
 }
+#endif

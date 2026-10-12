@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 private struct HoverTooltip: ViewModifier {
@@ -44,3 +45,4 @@ extension View {
         modifier(HoverTooltip(text: text, alignment: alignment))
     }
 }
+#endif

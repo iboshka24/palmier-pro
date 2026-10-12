@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TimelineKeyframeLaneHeaderControl: View {
@@ -81,3 +82,4 @@ struct TimelineKeyframeLaneHeaderControl: View {
         editor.seekToFrame(destination.frame)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension ToolExecutor {
@@ -58,3 +59,4 @@ extension ToolExecutor {
         return s...e
     }
 }
+#endif

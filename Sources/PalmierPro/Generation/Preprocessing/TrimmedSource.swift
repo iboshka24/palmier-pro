@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -18,3 +19,4 @@ struct TrimmedSource: Sendable {
         )
     }
 }
+#endif

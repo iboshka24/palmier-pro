@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 extension TimelineView {
@@ -33,3 +34,4 @@ extension TimelineView {
         }
     }
 }
+#endif

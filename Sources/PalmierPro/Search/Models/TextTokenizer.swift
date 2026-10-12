@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Tokenizers
 
@@ -22,3 +23,4 @@ final class TextTokenizer: @unchecked Sendable {
         return ids
     }
 }
+#endif

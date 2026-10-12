@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 import UniformTypeIdentifiers
 
@@ -381,3 +382,4 @@ final class AppState {
     }()
 
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -46,3 +47,4 @@ struct TranscriptCacheTests {
         #expect(decoded.words[0].start == full.words[0].start)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TitleTabBar: View {
@@ -64,3 +65,4 @@ struct TitleTabBar: View {
         }
     }
 }
+#endif

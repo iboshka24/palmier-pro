@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -51,3 +52,4 @@ struct RotationMutationTests {
         #expect(animatedClip.rotationAt(frame: 10) == 45)
     }
 }
+#endif

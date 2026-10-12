@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Observation
 import Testing
@@ -347,3 +348,4 @@ struct VideoProjectLoadTests {
         #expect(reopened.manifestUnreadable == false)         // valid (empty) manifest now
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum CostEstimator {
@@ -215,3 +216,4 @@ enum CostEstimator {
         return Int(credits.rounded(.up))
     }
 }
+#endif

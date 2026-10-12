@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 enum IndexBrowserSection: String, CaseIterable {
@@ -150,3 +151,4 @@ struct IndexTab: View {
         }
     }
 }
+#endif

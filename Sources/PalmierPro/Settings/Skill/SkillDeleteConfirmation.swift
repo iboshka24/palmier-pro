@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 extension Skill {
@@ -44,3 +45,4 @@ extension View {
         modifier(SkillDeleteConfirmation(skill: skill, onDelete: onDelete))
     }
 }
+#endif

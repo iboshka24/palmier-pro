@@ -1,3 +1,4 @@
+#if os(macOS)
 extension EditorViewModel {
     func toggleChromaKeySampling(clipId: String) {
         if chromaKeySamplingClipId == clipId {
@@ -38,3 +39,4 @@ extension EditorViewModel {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import CryptoKit
 import Foundation
 import Testing
@@ -22,3 +23,4 @@ struct ModelDownloaderTests {
         }
     }
 }
+#endif

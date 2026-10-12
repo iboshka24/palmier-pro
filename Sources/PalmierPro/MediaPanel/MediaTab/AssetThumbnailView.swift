@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct AssetThumbnailView: View {
@@ -333,3 +334,4 @@ struct AssetThumbnailView: View {
         editor.selectMediaPanelItem(asset.id, mode: mode)
     }
 }
+#endif

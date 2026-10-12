@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct ChatHistoryList: View {
@@ -68,3 +69,4 @@ struct ChatHistoryList: View {
         .onTapGesture { onSelect(session.id) }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 // Prompt @-autocomplete for models that reference inputs by ordered tags.
@@ -119,3 +120,4 @@ extension GenerationView {
         highlightedMentionIndex = 0
     }
 }
+#endif

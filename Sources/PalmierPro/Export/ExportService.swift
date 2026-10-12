@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import AppKit
 import CoreImage
@@ -622,3 +623,4 @@ final class ExportService {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -45,3 +46,4 @@ struct GenerationTelemetryTests {
         #expect(properties["session_id"] as? String == "session-1")
     }
 }
+#endif

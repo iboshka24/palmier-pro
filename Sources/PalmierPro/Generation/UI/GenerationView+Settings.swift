@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 private enum GenerationSettingsLayout {
@@ -464,3 +465,4 @@ extension GenerationView {
         }
     }
 }
+#endif

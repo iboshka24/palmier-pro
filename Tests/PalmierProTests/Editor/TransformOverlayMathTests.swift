@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Testing
 @testable import PalmierPro
@@ -62,3 +63,4 @@ struct TransformOverlayMathTests {
         #expect(!result.guides.y)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct SpeechAnalysisSections: View {
@@ -216,3 +217,4 @@ struct SpeechAnalysisSections: View {
         }
     }
 }
+#endif

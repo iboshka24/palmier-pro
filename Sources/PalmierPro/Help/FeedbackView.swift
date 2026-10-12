@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -333,3 +334,4 @@ final class FeedbackWindowController: NSWindowController {
 #Preview {
     FeedbackView(screenshot: nil)
 }
+#endif

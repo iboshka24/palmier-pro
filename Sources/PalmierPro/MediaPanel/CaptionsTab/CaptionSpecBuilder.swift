@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 
@@ -297,3 +298,4 @@ enum CaptionSpecBuilder {
         )
     }
 }
+#endif

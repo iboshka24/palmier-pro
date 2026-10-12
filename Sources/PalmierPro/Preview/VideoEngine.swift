@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import AppKit
 import CoreImage
@@ -829,3 +830,4 @@ extension Timeline {
         return stripped
     }
 }
+#endif

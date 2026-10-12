@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Session store for VAD speech masks and derived dead-air spans (32 ms cells).
@@ -156,3 +157,4 @@ final class SpeechMaskStore {
         return dead
     }
 }
+#endif

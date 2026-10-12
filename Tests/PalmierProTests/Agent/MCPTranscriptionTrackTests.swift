@@ -1,3 +1,4 @@
+#if os(macOS)
 import MCP
 import Testing
 @testable import PalmierPro
@@ -84,3 +85,4 @@ struct MCPTranscriptionTrackTests {
         await client.disconnect()
     }
 }
+#endif

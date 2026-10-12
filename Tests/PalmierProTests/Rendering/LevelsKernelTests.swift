@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -44,3 +45,4 @@ struct LevelsKernelTests {
         }
     }
 }
+#endif

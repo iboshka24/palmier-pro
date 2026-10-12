@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -229,3 +230,4 @@ struct AgentMentionTests {
         #expect(referenced == [rangeMention])
     }
 }
+#endif

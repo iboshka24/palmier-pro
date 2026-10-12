@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -56,3 +57,4 @@ struct AgentThinkingTests {
         #expect(service.messages.count == 1)
     }
 }
+#endif

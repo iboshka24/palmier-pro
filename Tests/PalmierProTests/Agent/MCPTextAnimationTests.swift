@@ -1,3 +1,4 @@
+#if os(macOS)
 import MCP
 import Testing
 @testable import PalmierPro
@@ -48,3 +49,4 @@ struct MCPTextAnimationTests {
         await client.disconnect()
     }
 }
+#endif

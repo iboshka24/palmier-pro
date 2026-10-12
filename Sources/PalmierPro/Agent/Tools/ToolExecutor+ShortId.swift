@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 // UUID ids are shortened to unique prefixes when output; full ids are accepted as input.
@@ -125,3 +126,4 @@ extension ToolExecutor {
         return ref
     }
 }
+#endif

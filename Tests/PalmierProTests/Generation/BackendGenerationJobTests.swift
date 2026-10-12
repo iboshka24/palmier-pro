@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -16,3 +17,4 @@ struct BackendGenerationJobTests {
         #expect(withoutRefund.refundedCredits == nil)
     }
 }
+#endif

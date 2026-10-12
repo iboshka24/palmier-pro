@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -180,3 +181,4 @@ struct RippleTrimTests {
         #expect(spans(e.timeline.tracks[1]) == [[0, 100]])
     }
 }
+#endif

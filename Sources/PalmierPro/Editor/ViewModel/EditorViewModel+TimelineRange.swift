@@ -1,3 +1,4 @@
+#if os(macOS)
 extension EditorViewModel {
     var validSelectedTimelineRange: TimelineRangeSelection? {
         guard let range = selectedTimelineRange?.normalized, range.isValid else { return nil }
@@ -34,3 +35,4 @@ extension EditorViewModel {
         selectedTimelineRange = nil
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Testing
@@ -90,3 +91,4 @@ struct MCPInvertEffectTests {
         throw CocoaError(.coderReadCorrupt)
     }
 }
+#endif

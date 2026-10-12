@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 
 /// Immutable per-clip snapshot read on the render queue — never the live timeline.
@@ -54,3 +55,4 @@ final class CompositorInstruction: NSObject, AVVideoCompositionInstructionProtoc
         super.init()
     }
 }
+#endif

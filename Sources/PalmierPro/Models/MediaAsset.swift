@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import AVFoundation
 
@@ -336,3 +337,4 @@ final class MediaAsset: Identifiable {
         Task { await Self.thumbnailLoadGate.signal() }
     }
 }
+#endif

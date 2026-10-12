@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 enum ClipRenderer {
@@ -933,3 +934,4 @@ private extension String {
         return self
     }
 }
+#endif

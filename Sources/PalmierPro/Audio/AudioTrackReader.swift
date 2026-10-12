@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -90,3 +91,4 @@ enum AudioTrackReader {
         }
     }
 }
+#endif

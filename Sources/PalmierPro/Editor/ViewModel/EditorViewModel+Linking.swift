@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 /// Snapshot of the video/audio track partition. Video/image tracks sit at
@@ -490,3 +491,4 @@ extension EditorViewModel {
         linkTargets(for: selectedClipIds) != nil
     }
 }
+#endif

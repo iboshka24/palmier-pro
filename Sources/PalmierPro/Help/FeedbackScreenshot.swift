@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 
@@ -48,3 +49,4 @@ enum FeedbackScreenshot {
         return rep.representation(using: .png, properties: [:]) ?? pngData
     }
 }
+#endif

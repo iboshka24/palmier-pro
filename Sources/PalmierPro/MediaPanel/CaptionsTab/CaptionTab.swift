@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct CaptionTab: View {
@@ -666,3 +667,4 @@ struct CaptionTab: View {
         }
     }
 }
+#endif

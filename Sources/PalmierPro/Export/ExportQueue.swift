@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum ExportJobSource: String, Sendable {
@@ -336,3 +337,4 @@ private extension ExportJob {
         return warnings.count
     }
 }
+#endif

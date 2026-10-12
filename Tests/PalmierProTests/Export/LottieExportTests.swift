@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import AppKit
 import Testing
@@ -56,3 +57,4 @@ struct LottieExportTests {
         #expect(bottomRight.redComponent < 0.3)
     }
 }
+#endif

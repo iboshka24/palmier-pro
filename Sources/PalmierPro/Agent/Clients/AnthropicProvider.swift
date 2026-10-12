@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum AgentUsageLog {
@@ -194,3 +195,4 @@ enum AnthropicRequestBody {
         return object
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -89,3 +90,4 @@ struct ManageTracksTests {
         #expect(await h.runRaw("manage_tracks", args: [:]).isError)
     }
 }
+#endif

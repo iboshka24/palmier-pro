@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Testing
@@ -181,3 +182,4 @@ struct UndoToolTests {
         throw CocoaError(.coderReadCorrupt)
     }
 }
+#endif

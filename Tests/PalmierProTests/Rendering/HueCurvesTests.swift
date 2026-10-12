@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -96,3 +97,4 @@ struct HueCurvesTests {
         #expect(abs(nearOne - atZero) < 0.05, "seam discontinuity \(nearOne) vs \(atZero)")
     }
 }
+#endif

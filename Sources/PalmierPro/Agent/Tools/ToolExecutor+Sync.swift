@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension ToolExecutor {
@@ -65,3 +66,4 @@ extension ToolExecutor {
         return mutationResult(editor, since: snapshot, touched: report.synced.map(\.clipId), extra: extra)
     }
 }
+#endif

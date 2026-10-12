@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct CanvasOverlaySelection: Equatable {
@@ -224,3 +225,4 @@ struct CanvasViewingOverlay: View {
         )
     }
 }
+#endif

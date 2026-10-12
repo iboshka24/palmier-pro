@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 
 enum MediaPanelSelectionMode: Equatable {
@@ -240,3 +241,4 @@ extension EditorViewModel {
         return "Delete Media"
     }
 }
+#endif

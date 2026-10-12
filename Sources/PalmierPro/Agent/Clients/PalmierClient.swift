@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import ClerkKit
 
@@ -88,3 +89,4 @@ enum AgentServiceError: Error {
         return (code, message)
     }
 }
+#endif

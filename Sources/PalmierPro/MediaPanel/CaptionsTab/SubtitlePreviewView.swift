@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct SubtitlePreviewView: View {
@@ -80,3 +81,4 @@ struct SubtitlePreviewView: View {
         )
     }
 }
+#endif

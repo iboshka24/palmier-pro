@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import ClerkKit
 
@@ -167,3 +168,4 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         editor.tour.start(in: editor)
     }
 }
+#endif

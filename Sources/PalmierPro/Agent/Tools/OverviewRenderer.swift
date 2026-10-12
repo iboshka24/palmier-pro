@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreGraphics
 import CoreText
@@ -110,3 +111,4 @@ enum OverviewRenderer {
             : String(format: "%d:%02d", s / 60, s % 60)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct MarkerColorPicker: View {
@@ -29,3 +30,4 @@ struct MarkerColorPicker: View {
         }
     }
 }
+#endif

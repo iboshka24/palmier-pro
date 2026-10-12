@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Foundation
 import Testing
@@ -954,3 +955,4 @@ struct MediaPanelSearchTests {
         #expect(e.missingMediaRefreshTask == nil)
     }
 }
+#endif

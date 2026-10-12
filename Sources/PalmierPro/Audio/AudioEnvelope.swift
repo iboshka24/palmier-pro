@@ -1,3 +1,4 @@
+#if os(macOS)
 import Accelerate
 import AVFoundation
 import Foundation
@@ -76,3 +77,4 @@ enum AudioEnvelopeExtractor {
         log1p((sumSquares / Float(count)).squareRoot() * 100)
     }
 }
+#endif

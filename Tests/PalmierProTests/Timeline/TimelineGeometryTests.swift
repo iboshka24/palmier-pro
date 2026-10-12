@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import Testing
 @testable import PalmierPro
@@ -165,3 +166,4 @@ struct TimelineGeometryTests {
         #expect(g.insertionLineY(for: .newTrackAt(3)) == 210)
     }
 }
+#endif

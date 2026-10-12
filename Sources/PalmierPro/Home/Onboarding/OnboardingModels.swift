@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum OnboardingStep: Int {
@@ -96,3 +97,4 @@ enum OnboardingQuestion: String, CaseIterable, Identifiable {
         }
     }
 }
+#endif

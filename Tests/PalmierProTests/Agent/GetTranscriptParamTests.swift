@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -284,3 +285,4 @@ struct GetTranscriptParamTests {
         #expect(segRows?.first?[3] as? Int == 20)  // segment end retains real end frames
     }
 }
+#endif

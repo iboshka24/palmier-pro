@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -92,3 +93,4 @@ struct RippleInsertPreviewTests {
         #expect(preview?.shiftDeltasByClipId.isEmpty == true)
     }
 }
+#endif

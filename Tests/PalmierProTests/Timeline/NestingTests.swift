@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -225,3 +226,4 @@ struct NestingTests {
         #expect(!e.nestTimeline(aId, cursor: .newTrackAt(0), atFrame: 0))   // B can't nest A
     }
 }
+#endif

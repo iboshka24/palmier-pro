@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 enum FrameCaptureSource: Sendable {
@@ -190,3 +191,4 @@ extension EditorViewModel {
         }
     }
 }
+#endif

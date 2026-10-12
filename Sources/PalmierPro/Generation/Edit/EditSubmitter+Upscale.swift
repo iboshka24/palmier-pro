@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 extension EditSubmitter {
@@ -82,3 +83,4 @@ extension EditSubmitter {
         )
     }
 }
+#endif

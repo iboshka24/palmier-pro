@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Exact keyword search over cached transcripts
@@ -35,3 +36,4 @@ enum TranscriptSearch {
         terms.allSatisfy { text.range(of: $0, options: [.caseInsensitive, .diacriticInsensitive]) != nil }
     }
 }
+#endif

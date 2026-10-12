@@ -1,0 +1,38 @@
+name: port
+
+on:
+  push:
+    branches: [port/linux-windows]
+  pull_request:
+    branches: [port/linux-windows]
+  workflow_dispatch:
+
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Swift
+        run: |
+          curl -fSL -o swift.tar.gz https://download.swift.org/swift-6.2.1-release/ubuntu2404/swift-6.2.1-RELEASE/swift-6.2.1-RELEASE-ubuntu24.04.tar.gz
+          mkdir -p $HOME/swift-toolchain && tar xzf swift.tar.gz -C $HOME/swift-toolchain && rm swift.tar.gz
+          echo "$HOME/swift-toolchain/swift-6.2.1-RELEASE-ubuntu24.04/usr/bin" >> $GITHUB_PATH
+      - run: swift build --disable-sandbox
+      - run: swift test --disable-sandbox
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "6.2.1"
+      - run: swift build --disable-sandbox
+      - run: swift test --disable-sandbox
+
+  macos:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift build
+      - run: swift build --build-tests

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -52,3 +53,4 @@ struct SkillUsageAnalyticsTests {
         #expect(result.isError)
     }
 }
+#endif

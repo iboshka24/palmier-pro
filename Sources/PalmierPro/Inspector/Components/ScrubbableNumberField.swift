@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import SwiftUI
 
@@ -275,3 +276,4 @@ private extension Double {
         Swift.min(Swift.max(self, range.lowerBound), range.upperBound)
     }
 }
+#endif

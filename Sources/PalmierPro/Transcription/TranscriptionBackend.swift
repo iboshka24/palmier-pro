@@ -1,3 +1,4 @@
+#if os(macOS)
 @preconcurrency import Combine
 import Foundation
 @preconcurrency import ConvexMobile
@@ -118,3 +119,4 @@ enum TranscriptionBackendError: LocalizedError {
         }
     }
 }
+#endif

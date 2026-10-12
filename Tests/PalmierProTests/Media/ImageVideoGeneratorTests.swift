@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import CoreGraphics
 import ImageIO
@@ -79,3 +80,4 @@ struct ImageVideoGeneratorTests {
         guard CGImageDestinationFinalize(dest) else { throw CocoaError(.fileWriteUnknown) }
     }
 }
+#endif

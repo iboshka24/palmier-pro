@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct CapsuleButtonStyle: ButtonStyle {
@@ -78,3 +79,4 @@ extension ButtonStyle where Self == CapsuleButtonStyle {
         .init(variant: variant, size: size, fill: fill)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -88,3 +89,4 @@ import Testing
         #expect(plan.placements.isEmpty)
     }
 }
+#endif

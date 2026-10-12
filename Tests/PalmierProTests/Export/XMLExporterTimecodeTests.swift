@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -79,3 +80,4 @@ struct XMLExporterTimecodeTests {
         #expect(XMLExporter.formatTimecode(frame: 100, fps: 0, dropFrame: false) == "00:00:00:00")
     }
 }
+#endif

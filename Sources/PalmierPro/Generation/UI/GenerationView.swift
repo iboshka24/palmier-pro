@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct GenerationView: View {
@@ -468,3 +469,4 @@ struct GenerationView: View {
         .padding(.vertical, AppTheme.Spacing.sm)
     }
 }
+#endif

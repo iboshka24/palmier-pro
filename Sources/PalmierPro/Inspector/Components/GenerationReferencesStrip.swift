@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct GenerationReferencesStrip: View {
@@ -98,3 +99,4 @@ struct GenerationReferencesStrip: View {
         }
     }
 }
+#endif

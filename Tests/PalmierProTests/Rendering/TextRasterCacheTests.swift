@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import os
@@ -160,3 +161,4 @@ struct TextRasterCacheTests {
                 "reused raster must composite at the moved position: \(beforeX) → \(afterX)")
     }
 }
+#endif

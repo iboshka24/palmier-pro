@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreGraphics
 import Foundation
 import ImageIO
@@ -94,3 +95,4 @@ struct VisualIndexerTests {
         #expect(hit.shotStart >= 7.5 && hit.shotEnd <= 22.5, "shot range \(hit.shotStart)–\(hit.shotEnd)")
     }
 }
+#endif

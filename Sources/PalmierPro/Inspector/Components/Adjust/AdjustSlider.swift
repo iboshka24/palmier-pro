@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct AdjustSlider: View {
@@ -61,3 +62,4 @@ struct AdjustSlider: View {
         }
     }
 }
+#endif

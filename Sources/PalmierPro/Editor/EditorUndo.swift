@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 @MainActor
@@ -77,3 +78,4 @@ final class EditorUndo {
         manager?.removeAllActions(withTarget: target)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -106,3 +107,4 @@ enum ColorScopes {
         )
     }
 }
+#endif

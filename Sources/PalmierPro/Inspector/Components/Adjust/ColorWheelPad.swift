@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 /// A circular hue/saturation pad. Position is value-space `(x, y)` in the unit disk,
@@ -85,3 +86,4 @@ private let wheelImage: CGImage = {
     )!
     return ctx.makeImage()!
 }()
+#endif

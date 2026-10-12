@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 @MainActor
@@ -20,3 +21,4 @@ enum EditSubmitter {
         return "\(prefix) \(base)"
     }
 }
+#endif

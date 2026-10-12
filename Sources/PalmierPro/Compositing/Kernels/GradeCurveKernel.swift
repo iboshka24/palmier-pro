@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -54,3 +55,4 @@ enum GradeCurveKernel {
         }
     }
 }
+#endif

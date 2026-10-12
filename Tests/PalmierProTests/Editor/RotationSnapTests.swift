@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -40,3 +41,4 @@ struct RotationSnapTests {
         #expect(!RotationSnap.isAxisAligned(rotation))
     }
 }
+#endif

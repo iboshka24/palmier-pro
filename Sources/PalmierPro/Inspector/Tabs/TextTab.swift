@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TextTab: View {
@@ -278,3 +279,4 @@ struct TextAnimateTab: View {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 /// Multiple timelines per project: switching, per-timeline view state, and CRUD.
@@ -300,3 +301,4 @@ extension Timeline {
         for i in markers.indices { markers[i].id = UUID().uuidString }
     }
 }
+#endif

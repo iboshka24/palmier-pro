@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 import Testing
@@ -67,3 +68,4 @@ struct GradeCurveKernelTests {
         #expect(maxJump < 0.03, "smooth per-pixel curve, max step \(maxJump)")
     }
 }
+#endif

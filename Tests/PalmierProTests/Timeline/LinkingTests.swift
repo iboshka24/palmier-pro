@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -170,3 +171,4 @@ struct LinkingTests {
         #expect(editor.timeline.tracks[1].clips[0].linkGroupId == nil)
     }
 }
+#endif

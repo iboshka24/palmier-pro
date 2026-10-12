@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import SwiftUI
 
@@ -325,3 +326,4 @@ private struct MomentThumbnail: View {
         return try? await generator.image(at: cmTime).image
     }
 }
+#endif

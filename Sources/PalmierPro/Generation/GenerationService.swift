@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 @preconcurrency import Combine
 @preconcurrency import ConvexMobile
@@ -740,3 +741,4 @@ final class GenerationService {
     }
 
 }
+#endif

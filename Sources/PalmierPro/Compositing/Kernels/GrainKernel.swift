@@ -1,3 +1,4 @@
+#if os(macOS)
 import CoreImage
 import Foundation
 
@@ -12,3 +13,4 @@ enum GrainKernel {
                             arguments: [image, Float(amount), Float(size), Float(frame)]) ?? image
     }
 }
+#endif

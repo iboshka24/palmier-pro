@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct KeyframeControlStrip: View {
@@ -66,3 +67,4 @@ struct KeyframeControlStrip: View {
         .help(help)
     }
 }
+#endif

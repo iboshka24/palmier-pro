@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct TextStyleSelection {
@@ -584,3 +585,4 @@ extension TextStyleControls where AfterAlignment == EmptyView, AfterColor == Emp
         )
     }
 }
+#endif

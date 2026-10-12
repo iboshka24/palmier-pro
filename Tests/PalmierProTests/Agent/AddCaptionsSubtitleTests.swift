@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -85,3 +86,4 @@ struct AddCaptionsSubtitleTests {
         #expect(asset.type == .subtitle)
     }
 }
+#endif

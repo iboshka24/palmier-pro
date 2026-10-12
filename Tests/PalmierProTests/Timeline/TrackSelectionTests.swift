@@ -1,3 +1,4 @@
+#if os(macOS)
 import Testing
 @testable import PalmierPro
 
@@ -45,3 +46,4 @@ struct TrackSelectionTests {
         #expect(editor.selectedGap != nil)
     }
 }
+#endif

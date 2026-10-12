@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 import Testing
@@ -45,3 +46,4 @@ struct VoiceActivityTests {
         }
     }
 }
+#endif

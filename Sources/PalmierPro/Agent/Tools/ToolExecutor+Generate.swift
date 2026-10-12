@@ -1,3 +1,4 @@
+#if os(macOS)
 import AVFoundation
 import Foundation
 
@@ -751,3 +752,4 @@ extension ToolExecutor {
         return info
     }
 }
+#endif

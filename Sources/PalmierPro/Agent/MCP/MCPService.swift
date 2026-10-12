@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 
@@ -137,3 +138,4 @@ final class MCPService {
     }
 
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import Testing
 @testable import PalmierPro
@@ -121,3 +122,4 @@ private final class VisualSearchModelStub: VisualSearchModelLoading {
         state = .downloading(0)
     }
 }
+#endif

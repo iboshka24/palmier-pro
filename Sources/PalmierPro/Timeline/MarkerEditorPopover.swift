@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 struct MarkerEditorPopover: View {
     @Environment(EditorViewModel.self) private var editor
@@ -112,3 +113,4 @@ struct MarkerEditorPopover: View {
         }
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if os(macOS)
 import SwiftUI
 
 struct MulticamTab: View {
@@ -70,3 +71,4 @@ struct MulticamTab: View {
         }
     }
 }
+#endif

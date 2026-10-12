@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 
 @Observable
@@ -29,3 +30,4 @@ final class ModelPreferences {
         UserDefaults.standard.set(Array(disabledIds), forKey: Self.defaultsKey)
     }
 }
+#endif

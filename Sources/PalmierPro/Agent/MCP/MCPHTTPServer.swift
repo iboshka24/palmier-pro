@@ -1,3 +1,4 @@
+#if os(macOS)
 import Foundation
 import MCP
 import Network
@@ -310,3 +311,4 @@ actor MCPHTTPServer {
         }
     }
 }
+#endif
