@@ -1,5 +1,6 @@
 > [!NOTE]
-> Linux/Windows fork: the portable core builds on Linux and Windows.
+> Linux/Windows fork: the portable core builds on Linux and Windows, and the
+> binary serves a web timeline UI at `http://127.0.0.1:19790/`.
 > See [docs/Porting.md](docs/Porting.md) and the
 > [fork releases](https://github.com/iboshka24/palmier-pro/releases).
 > Fork binaries are built from GPLv3 source and distributed under GPLv3.

@@ -16,6 +16,8 @@ enum BundledResource {
             Bundle.main.resourceURL?.appendingPathComponent(path),
             Bundle.main.resourceURL?.appendingPathComponent("PalmierPro_PalmierPro.bundle/\(path)"),
             buildDirectory.appendingPathComponent("PalmierPro_PalmierPro.bundle/\(path)"),
+            Bundle.main.resourceURL?.appendingPathComponent("PalmierPro_PalmierPro.resources/\(path)"),
+            buildDirectory.appendingPathComponent("PalmierPro_PalmierPro.resources/\(path)"),
         ].compactMap { $0 }
         return candidates.first { FileManager.default.fileExists(atPath: $0.path) }
     }

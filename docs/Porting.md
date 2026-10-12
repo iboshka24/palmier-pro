@@ -8,8 +8,8 @@ Branch: `port/linux-windows`.
 
 | Platform | Target | State |
 |---|---|---|
-| Linux x86_64 | `PalmierPro` core binary | Builds, `swift test` passes (228 tests) |
-| Windows x86_64 | `PalmierPro` core binary | Compiles via CI (`port.yml`), same portable core |
+| Linux x86_64 | `PalmierPro` core binary + web timeline UI | Builds, `swift test` passes (228 tests) |
+| Windows x86_64 | `PalmierPro` core binary + web timeline UI | Compiles via CI (`port.yml`), same portable core |
 | macOS arm64 | Full app | Untouched code paths; verified by macOS CI job |
 
 The portable core contains the timeline domain: models, project files,
@@ -20,6 +20,21 @@ and volume mapping.
 macOS-only (fenced, see below): SwiftUI/AppKit UI, AVFoundation media
 pipeline, Metal kernels, MCP HTTP server (Network.framework), cloud
 backends (Convex/Clerk), telemetry vendors, bundled MLX/speech models.
+
+## Cross-platform UI
+
+`Sources/PalmierPro/Server/` hosts a SwiftNIO HTTP server (non-macOS only)
+on `http://127.0.0.1:19790/`:
+
+- `GET /` — bundled canvas timeline (`Resources/Web/timeline.html`):
+  ruler, tracks, clips, playhead scrub, wheel zoom, spacebar playback,
+  clip selection.
+- `GET /api/project` — demo project as JSON, encoded from the real
+  `Timeline`/`Track`/`Clip` models.
+- `GET /api/health` — liveness.
+
+Run the binary and open the URL in a browser. This is the first UI layer;
+native shells (Tauri) and editing operations come next.
 
 ## Layout
 
@@ -45,7 +60,7 @@ Linux (Swift 6.2+):
 ```bash
 swift build
 swift test
-./.build/debug/PalmierPro
+./.build/debug/PalmierPro   # serves the timeline UI at http://127.0.0.1:19790/
 ```
 
 Windows: same commands in the Swift toolchain (`swift.org`, 6.2+).
@@ -69,6 +84,8 @@ binaries only, not fork builds).
 
 ## Roadmap
 
-1. Core (this release): portable domain + Linux/Windows binaries.
-2. Stateless MCP server on SwiftNIO for the portable core.
-3. Decoding/rendering via FFmpeg, UI evaluation (Qt or web-based timeline).
+1. Core: portable domain + Linux/Windows binaries. Done (`v0.11.0-port.1`).
+2. First UI layer: local HTTP API + canvas timeline in the browser.
+   Done (`v0.11.0-port.2`).
+3. Editing operations through the API (ripple/trim/split via the real
+   engines), project files, native window shell.

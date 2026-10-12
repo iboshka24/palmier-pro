@@ -21,10 +21,10 @@ app.run()
 #else
 import Foundation
 
-FileHandle.standardError.write(Data("""
-Palmier Pro core: Linux/Windows build.
-The editor UI, media pipeline, and MCP server are macOS-only in this phase.
-See docs/Porting.md.
-
-""".utf8))
+do {
+    try PortServer.start()
+} catch {
+    FileHandle.standardError.write(Data("port server failed: \(error)\n".utf8))
+    fatalError("port server failed")
+}
 #endif

@@ -61,8 +61,14 @@ let pluginTargets: [Target] = [
 ]
 let testDependencies: [Target.Dependency] = ["PalmierPro", .product(name: "MCP", package: "swift-sdk")]
 #else
-let dependencies: [Package.Dependency] = []
-let targetDependencies: [Target.Dependency] = []
+let dependencies: [Package.Dependency] = [
+    .package(url: "https://github.com/apple/swift-nio.git", from: "2.80.0"),
+]
+let targetDependencies: [Target.Dependency] = [
+    .product(name: "NIOCore", package: "swift-nio"),
+    .product(name: "NIOPosix", package: "swift-nio"),
+    .product(name: "NIOHTTP1", package: "swift-nio"),
+]
 let plugins: [Target.PluginUsage] = []
 let pluginTargets: [Target] = []
 let testDependencies: [Target.Dependency] = ["PalmierPro"]
@@ -96,6 +102,7 @@ let package = Package(
                 .copy("Resources/MCPB/palmier-pro.mcpb"),
                 .copy("Resources/Images"),
                 .copy("Resources/Changelog"),
+                .copy("Resources/Web"),
                 .process("Resources/Localization"),
                 .copy("Resources/Models"),
             ],
