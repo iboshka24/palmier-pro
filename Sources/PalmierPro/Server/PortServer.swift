@@ -7,23 +7,73 @@ import NIOHTTP1
 /// Local HTTP server exposing the portable core to cross-platform UI.
 /// macOS uses the native app; Linux/Windows serve this API plus the bundled web UI.
 enum PortServer {
-    static let port = 19790
+    static let preferredPort = 19790
 
-    static func start(port: Int = PortServer.port) throws {
+    /// Binds the first free port starting at `preferredPort`, opens the UI in
+    /// the default browser unless disabled, then serves until killed.
+    static func start(preferredPort: Int = PortServer.preferredPort, openBrowser: Bool = true) throws {
         let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
         defer { try? group.syncShutdownGracefully() }
         let bootstrap = ServerBootstrap(group: group)
             .serverChannelOption(ChannelOptions.backlog, value: 256)
+            .serverChannelOption(ChannelOptions.socketOption(.so_reuseaddr), value: 1)
             .childChannelInitializer { channel in
                 channel.pipeline.configureHTTPServerPipeline().flatMap {
                     channel.pipeline.addHandler(PortHTTPHandler())
                 }
             }
-        let channel = try bootstrap.bind(host: "127.0.0.1", port: port).wait()
-        Log.app.notice("port server listening port=\(port)")
-        print("Palmier Pro core at http://127.0.0.1:\(port)/ (Ctrl-C to stop)")
+
+        var bound: (channel: Channel, port: Int)?
+        var lastError: Error?
+        for port in preferredPort..<(preferredPort + 16) {
+            do {
+                bound = (try bootstrap.bind(host: "127.0.0.1", port: port).wait(), port)
+                break
+            } catch {
+                lastError = error
+            }
+        }
+        guard let bound else {
+            throw lastError ?? PortServerError.noFreePort
+        }
+        let (channel, port) = bound
+
+        let url = "http://127.0.0.1:\(port)/"
+        Log.app.notice("port server listening url=\(url)")
+        print("""
+        Palmier Pro timeline UI: \(url)
+        Keep this window open; press Ctrl-C to stop.
+
+        """)
+        if openBrowser {
+            openInBrowser(url)
+        }
         try channel.closeFuture.wait()
     }
+
+    private static func openInBrowser(_ url: String) {
+        #if os(Windows)
+        let exe = "C:\\Windows\\System32\\cmd.exe"
+        let args = ["/c", "start", "", url]
+        #else
+        let exe = "/usr/bin/xdg-open"
+        let args = [url]
+        #endif
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: exe)
+        process.arguments = args
+        process.standardOutput = FileHandle.nullDevice
+        process.standardError = FileHandle.nullDevice
+        do {
+            try process.run()
+        } catch {
+            Log.app.info("browser open failed: \(Log.detail(error))")
+        }
+    }
+}
+
+enum PortServerError: Error {
+    case noFreePort
 }
 
 private struct ProjectPayload: Encodable {
@@ -71,11 +121,13 @@ final class PortHTTPHandler: ChannelInboundHandler {
             send(context: context, head: head, status: .ok,
                  contentType: "application/json", body: body)
         case (.GET, "/"), (.GET, "/index.html"):
-            guard let url = BundledResource.url("Web/timeline.html"),
-                  let body = try? Data(contentsOf: url) else {
-                send(context: context, head: head, status: .notFound,
-                     contentType: "text/plain", body: Data("web UI not bundled".utf8))
-                return
+            let body: Data
+            if let url = BundledResource.url("Web/timeline.html"),
+               let data = try? Data(contentsOf: url) {
+                body = data
+            } else {
+                // Single-file fallback: binary moved without its resource dir.
+                body = Data(EmbeddedWebUI.html.utf8)
             }
             send(context: context, head: head, status: .ok,
                  contentType: "text/html; charset=utf-8", body: body)

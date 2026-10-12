@@ -21,10 +21,42 @@ app.run()
 #else
 import Foundation
 
+// Linux/Windows: serve the portable core + timeline UI.
+// Flags: --port N (preferred port), --no-browser.
+var preferredPort = PortServer.preferredPort
+var openBrowser = true
+var args = Array(CommandLine.arguments.dropFirst())
+while !args.isEmpty {
+    let arg = args.removeFirst()
+    switch arg {
+    case "--port":
+        if let value = args.first.flatMap({ Int($0) }) {
+            preferredPort = value
+            _ = args.removeFirst()
+        }
+    case "--no-browser":
+        openBrowser = false
+    case "--help", "-h":
+        print("""
+        Palmier Pro (portable core)
+
+        Usage: PalmierPro [--port N] [--no-browser]
+
+        Serves the timeline UI at http://127.0.0.1:<port>/ and opens it
+        in the default browser. See docs/Porting.md.
+
+        """)
+        exit(0)
+    default:
+        FileHandle.standardError.write(Data("unknown argument: \(arg)\n".utf8))
+        exit(2)
+    }
+}
+
 do {
-    try PortServer.start()
+    try PortServer.start(preferredPort: preferredPort, openBrowser: openBrowser)
 } catch {
     FileHandle.standardError.write(Data("port server failed: \(error)\n".utf8))
-    fatalError("port server failed")
+    exit(1)
 }
 #endif
